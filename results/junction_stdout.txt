@@ -1,0 +1,55 @@
+{
+  "status": "PASS",
+  "target": "((((((...)))(((...))))))",
+  "positions": 24,
+  "candidate_count": 256,
+  "distinct_candidates": 256,
+  "unique_target_count": 225,
+  "tied_target_count": 2,
+  "beaten_target_count": 29,
+  "full_enumeration_crosschecks": [
+    {
+      "category": "unique",
+      "sequence": "AAAAAAAAAUUUCCCAAAGGGUUU",
+      "folds_enumerated": 42478,
+      "status": "PASS",
+      "minimum_energy": -1024,
+      "optimal_count": 1,
+      "best_alternative_energy": -931
+    },
+    {
+      "category": "tie",
+      "sequence": "GUUCUCCUGGAGUGGACUCCAAAC",
+      "folds_enumerated": 13117,
+      "status": "PASS",
+      "minimum_energy": -1297,
+      "optimal_count": 2,
+      "best_alternative_energy": -1297
+    },
+    {
+      "category": "beaten",
+      "sequence": "AAAUUUAAAAAAUUUAAAAAAUUU",
+      "folds_enumerated": 157353,
+      "status": "PASS",
+      "minimum_energy": -708,
+      "optimal_count": 2,
+      "best_alternative_energy": -708
+    }
+  ],
+  "enumeration_cap_skips": [
+    {
+      "category": "beaten",
+      "sequence": "AAAAAAAAAUUUAAAAAAUUUUUU",
+      "compatible_fold_count": 277398,
+      "reason": "declared 200000 enumeration cap"
+    },
+    {
+      "category": "beaten",
+      "sequence": "AAAAAAAAAUUUUUUAAAAAAUUU",
+      "compatible_fold_count": 219736,
+      "reason": "declared 200000 enumeration cap"
+    }
+  ],
+  "scope": "Selected sequences for one target only; no general theorem or undesignability result."
+}
+FIRST_SUCCESS {"origin": "constant_stems", "sequence": "AAAAAAAAAUUUCCCAAAGGGUUU", "target_energy": -1024, "minimum_energy": -1024, "optimal_count": 1, "best_alternative_energy": -931, "gap": 93, "unique_target": true, "alternative": "..(((((...))(((...))))))"}

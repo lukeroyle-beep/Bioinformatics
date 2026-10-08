@@ -1,0 +1,6 @@
+name = "rna_stage2_pilot"
+version = "0.1.0"
+defaultTargets = ["Pilot"]
+
+[[lean_lib]]
+name = "Pilot"

@@ -19,6 +19,11 @@ Junction pilot cap: 256 deterministic target-compatible candidates at the minimu
 random assignments. No adaptive optimisation or exhaustive sequence search.
 Evaluate every admissible fold via exact dynamic programming for each candidate.
 Cross-check the first successes/failures on explicit compatible-fold enumeration.
+The checker implemented a 200,000-fold cap per case. The initial checker run hit
+that cap, after the full candidate screen had run. The repaired checker counts
+folds first, logs over-cap representatives, and checks the first representative
+in each observed outcome class that fits the unchanged cap. No candidates,
+parameters, search bounds or decision criteria changed.
 
 Lean pilot: a new, small dependency-free model and finite certificate, pinned to
 Lean 4.19.0. No code imported from the related 2026 repository. That repository's

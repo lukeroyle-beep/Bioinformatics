@@ -12,6 +12,15 @@ from folding import fold, alternative
 import exhaustive as ex
 
 @lru_cache(None)
+def compatible_count(seq):
+    """Count before materialising so the declared enumeration budget is respected."""
+    if not seq:
+        return 1
+    return compatible_count(seq[1:])+sum(
+        compatible_count(seq[1:k])*compatible_count(seq[k+1:])
+        for k in range(4,len(seq)) if seq[0]+seq[k] in ex.PAIR_ORDER)
+
+@lru_cache(None)
 def compatible_folds(seq, offset=0):
     if not seq:
         return ((),)
@@ -62,8 +71,18 @@ def main():
         results.append(row)
     checks=[]
     chosen=[]
-    for predicate in (lambda r:r['unique_target'],lambda r:r['gap']==0,lambda r:r['gap']<0):
-        row=next((r for r in results if predicate(r)),None)
+    skipped=[]
+    for label,predicate in (('unique',lambda r:r['unique_target']),('tie',lambda r:r['gap']==0),('beaten',lambda r:r['gap']<0)):
+        row=None
+        for candidate in results:
+            if not predicate(candidate):
+                continue
+            count=compatible_count(candidate['sequence'])
+            if count>200000:
+                skipped.append({'category':label,'sequence':candidate['sequence'],'compatible_fold_count':count,'reason':'declared 200000 enumeration cap'})
+                continue
+            row=candidate
+            break
         if row and row['sequence'] not in chosen:
             chosen.append(row['sequence'])
             ss=compatible_folds(row['sequence'])
@@ -72,14 +91,14 @@ def main():
             count=sum(e==best for e,_ in energies)
             alt=min(e for e,s in energies if s!=ps)
             assert (best,count,alt)==(row['minimum_energy'],row['optimal_count'],row['best_alternative_energy'])
-            checks.append({'sequence':row['sequence'],'folds_enumerated':len(ss),'status':'PASS','minimum_energy':best,'optimal_count':count,'best_alternative_energy':alt})
+            checks.append({'category':label,'sequence':row['sequence'],'folds_enumerated':len(ss),'status':'PASS','minimum_energy':best,'optimal_count':count,'best_alternative_energy':alt})
             compatible_folds.cache_clear()
     output={'status':'PASS','target':target,'positions':24,'candidate_count':len(results),
             'distinct_candidates':len(set(r['sequence'] for r in results)),
             'unique_target_count':sum(r['unique_target'] for r in results),
             'tied_target_count':sum(r['gap']==0 for r in results),
             'beaten_target_count':sum(r['gap']<0 for r in results),
-            'full_enumeration_crosschecks':checks,'candidates':results,
+            'full_enumeration_crosschecks':checks,'enumeration_cap_skips':skipped,'candidates':results,
             'scope':'Selected sequences for one target only; no general theorem or undesignability result.'}
     (ROOT/'results'/'junction_pilot.json').write_text(json.dumps(output,indent=2)+'\n')
     print(json.dumps({k:v for k,v in output.items() if k!='candidates'},indent=2))
