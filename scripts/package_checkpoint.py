@@ -54,7 +54,7 @@ with tempfile.TemporaryDirectory(prefix='rna-stage2-package-') as tmp:
               'The 24-position evidence remains computational; no general folder correctness or '
               'infinite-family theorem was proved. Literature novelty remains provisional. '
               'Stage 3 was not started. Astra Extra High was not verified. '
-              'No remote publication or external review was performed.\n').encode()
+              'No external review was performed. GitHub migration status is documented in README.md.\n').encode()
     restore = (f'# Restore this verified Stage 2 checkpoint\n\n'
                f'Commit: `{commit}`\n\n'
                'Verify MANIFEST.json SHA-256 entries, then run:\n\n'

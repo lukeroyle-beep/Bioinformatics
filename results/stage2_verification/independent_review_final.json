@@ -1,0 +1,1005 @@
+{
+  "acceptance_summary": "8 of 8 mandatory requirements passed; 0 failed or were partial and 0 remain blocked or unverified. Completion is allowed.",
+  "all_findings": [],
+  "audit_id": "AUDIT-6E1D7D448F56FC97",
+  "audit_kind": "INDEPENDENT_AUDIT",
+  "audit_scope": {
+    "excluded": [
+      "Stage 3",
+      "Infinite-family solution",
+      "General Python correctness proof",
+      "External mathematical review",
+      "Remote publication",
+      "Drive upload"
+    ],
+    "included": [
+      "Frozen Stage 2 technical verification, reviewed claims and intended local delivery"
+    ]
+  },
+  "audit_target": {
+    "description": "Final internal separate-agent read-only acceptance review of committed and restored Stage 2 checkpoint",
+    "self_audit": false,
+    "target_id": "rna-stage2-acceptance",
+    "type": "research-verification-checkpoint"
+  },
+  "blockers": [],
+  "cleanup_state": {
+    "evidence_ids": [],
+    "required": false,
+    "status": "NOT APPLICABLE",
+    "summary": "Not applicable."
+  },
+  "completion_allowed": true,
+  "confidence": "HIGH",
+  "delivery_state": {
+    "evidence_ids": [
+      "E8"
+    ],
+    "required": true,
+    "status": "COMPLETE",
+    "summary": "Reviewed changes committed; complete portable checkpoint independently restored and every manifest/source hash verified."
+  },
+  "deployment_state": {
+    "evidence_ids": [],
+    "required": false,
+    "status": "NOT APPLICABLE",
+    "summary": "Remote publication not authorised."
+  },
+  "dimension_assessment": {
+    "acceptance_criteria": "PASS",
+    "cleanup_state": "NOT APPLICABLE",
+    "delivery_state": "PASS",
+    "deployment_state": "NOT APPLICABLE",
+    "documentation_state": "PASS",
+    "evidence_sufficiency": "PASS",
+    "functional_verification": "PASS",
+    "operational_state": "NOT APPLICABLE",
+    "regression_verification": "PASS",
+    "residual_work": "PASS",
+    "scope_completion": "PASS"
+  },
+  "documentation_state": {
+    "evidence_ids": [
+      "E7"
+    ],
+    "required": true,
+    "status": "COMPLETE",
+    "summary": "Exact reviewed documentation committed and delivered; states finite scope, limitations and reproducible instructions."
+  },
+  "evidence_gaps": [],
+  "evidence_summary": {
+    "directly_observed": 8,
+    "fresh": 8,
+    "inferred": 0,
+    "reported": 0,
+    "stale": 0,
+    "total": 8,
+    "unbound": 0
+  },
+  "execution_envelope": {
+    "architecture_version": "1.0.0",
+    "authority": "conversation_context",
+    "dependency_status": {
+      "skill_runtime": "available"
+    },
+    "engine": "acceptance-auditor-deterministic-v1",
+    "execution_surface": "local-filesystem-and-compiler",
+    "fallback_reason": null,
+    "fallback_used": false,
+    "observation_kind": "actual",
+    "platform": "macos",
+    "runtime_version": "1.5.0",
+    "schema_version": "1.0.0",
+    "skill": "acceptance-completion-auditor",
+    "skill_version": "1.0.0",
+    "source": "structured-audit-invocation",
+    "validation_result": "accepted",
+    "warnings": [],
+    "write_back_allowed": false,
+    "write_back_performed": false
+  },
+  "final_state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+  "implementation_sha256": "db0f6c82cb2e8c3fc19d035632c58c58d10ea3f28f09e236186c576dfdbc0bb0",
+  "major_findings": [],
+  "mandatory_requirements_failed": 0,
+  "mandatory_requirements_passed": 8,
+  "mandatory_requirements_total": 8,
+  "mandatory_requirements_unverified": 0,
+  "minor_findings": [],
+  "observations": [],
+  "operational_state": {
+    "evidence_ids": [],
+    "required": false,
+    "status": "NOT APPLICABLE",
+    "summary": "Not applicable."
+  },
+  "orphan_implementation": [],
+  "re_audit": {
+    "current_final_state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+    "current_verdict": "ACCEPTED",
+    "new_findings": [],
+    "new_requirements": [],
+    "previous_final_state_identifier": "reviewed-files-sha256:4e9fa80a57127fe55e35e57721316c7b13b52748f020f675f058e4020e3454ea",
+    "previous_verdict": "INCOMPLETE",
+    "remaining_findings": [],
+    "removed_requirements": [],
+    "resolved_findings": [
+      "FINDING-165CA5A81CD0",
+      "FINDING-8D76AA5BADE8",
+      "FINDING-EDD3DC379EB8"
+    ]
+  },
+  "recommended_action": "No further action required.",
+  "requirement_traceability_matrix": [
+    {
+      "category": "scope",
+      "evidence": [
+        {
+          "evidence_id": "E1",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Source hashes and required Stage 1/model files were directly compared to saved commit d037996; frozen files match.",
+          "supports_requirement_ids": [
+            "R1"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E1"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Restore saved checkpoint and preserve frozen inputs",
+          "implementation_id": "I1",
+          "requirement_ids": [
+            "R1"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I1"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Restore saved checkpoint and preserve frozen inputs",
+      "requirement_id": "R1",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E1"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R1"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Source hashes and required Stage 1/model files were directly compared to saved commit d037996; frozen files match.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V1"
+        }
+      ],
+      "verification_refs": [
+        "V1"
+      ]
+    },
+    {
+      "category": "operational",
+      "evidence": [
+        {
+          "evidence_id": "E2",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Direct lean --version reports pinned 4.19.0 commit 6caaee842e94; recorded official download and executable hashes match inspected metadata.",
+          "supports_requirement_ids": [
+            "R2"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E2"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Record actual working Lean 4.19.0 environment",
+          "implementation_id": "I2",
+          "requirement_ids": [
+            "R2"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I2"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Record actual working Lean 4.19.0 environment",
+      "requirement_id": "R2",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E2"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R2"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Direct lean --version reports pinned 4.19.0 commit 6caaee842e94; recorded official download and executable hashes match inspected metadata.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V2"
+        }
+      ],
+      "verification_refs": [
+        "V2"
+      ]
+    },
+    {
+      "category": "functional",
+      "evidence": [
+        {
+          "evidence_id": "E3",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "All nine original declarations are preserved. Reviewed full relation domain, compatibility, matching/noncrossing legality, constant orientation and constructive fold-to-mask bridge; only GGAAACC is covered.",
+          "supports_requirement_ids": [
+            "R3"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E3"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Preserve intended theorem and justify all-fold finite coverage",
+          "implementation_id": "I3",
+          "requirement_ids": [
+            "R3"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I3"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Preserve intended theorem and justify all-fold finite coverage",
+      "requirement_id": "R3",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E3"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R3"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "All nine original declarations are preserved. Reviewed full relation domain, compatibility, matching/noncrossing legality, constant orientation and constructive fold-to-mask bridge; only GGAAACC is covered.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V3"
+        }
+      ],
+      "verification_refs": [
+        "V3"
+      ]
+    },
+    {
+      "category": "functional",
+      "evidence": [
+        {
+          "evidence_id": "E4",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Independent direct Lean elaboration exited 0 with empty stderr and exact retained output for 20 theorems. Union is propext and Quot.sound; no sorry/admit/unproved project axioms/native_decide/unsafe.",
+          "supports_requirement_ids": [
+            "R4"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E4"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Kernel proofs and disclosed permitted transitive axioms",
+          "implementation_id": "I4",
+          "requirement_ids": [
+            "R4"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I4"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Kernel proofs and disclosed permitted transitive axioms",
+      "requirement_id": "R4",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E4"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R4"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Independent direct Lean elaboration exited 0 with empty stderr and exact retained output for 20 theorems. Union is propext and Quot.sound; no sorry/admit/unproved project axioms/native_decide/unsafe.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V4"
+        }
+      ],
+      "verification_refs": [
+        "V4"
+      ]
+    },
+    {
+      "category": "regression",
+      "evidence": [
+        {
+          "evidence_id": "E5",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Inspected clean/build/audit exit codes and output; independently verified every source/log hash in final receipt.",
+          "supports_requirement_ids": [
+            "R5"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E5"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Retain clean build and exact source binding",
+          "implementation_id": "I5",
+          "requirement_ids": [
+            "R5"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I5"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Retain clean build and exact source binding",
+      "requirement_id": "R5",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E5"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R5"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Inspected clean/build/audit exit codes and output; independently verified every source/log hash in final receipt.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V5"
+        }
+      ],
+      "verification_refs": [
+        "V5"
+      ]
+    },
+    {
+      "category": "regression",
+      "evidence": [
+        {
+          "evidence_id": "E6",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Inspected recorded single executions and directly verified every input/output hash against unchanged sources and original git results. Validation differs only python and seconds; junction identical. Reviewer did not rerun either runner.",
+          "supports_requirement_ids": [
+            "R6"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E6"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Reproduce original Python runners exactly once without expanding search",
+          "implementation_id": "I6",
+          "requirement_ids": [
+            "R6"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I6"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Reproduce original Python runners exactly once without expanding search",
+      "requirement_id": "R6",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E6"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R6"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Inspected recorded single executions and directly verified every input/output hash against unchanged sources and original git results. Validation differs only python and seconds; junction identical. Reviewer did not rerun either runner.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V6"
+        }
+      ],
+      "verification_refs": [
+        "V6"
+      ]
+    },
+    {
+      "category": "documentation",
+      "evidence": [
+        {
+          "evidence_id": "E7",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "README, REPORT, RUN_CONTRACT, status and model reviews inspected against exact proof/build/computation evidence. Stage 3, general algorithms/family theorem, novelty, external publication/review/upload and model-setting claims remain outside scope.",
+          "supports_requirement_ids": [
+            "R7"
+          ],
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Every previously reviewed file SHA256 still matches the committed tree and delivered archive; no substantive or documentary changes since technical review."
+        }
+      ],
+      "evidence_refs": [
+        "E7"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Accurate checkpoint claims, limitations and reproducibility instructions",
+          "implementation_id": "I7",
+          "requirement_ids": [
+            "R7"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I7"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Accurate checkpoint claims, limitations and reproducibility instructions",
+      "requirement_id": "R7",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E7"
+          ],
+          "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R7"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "README, REPORT, RUN_CONTRACT, status and model reviews inspected against exact proof/build/computation evidence. Stage 3, general algorithms/family theorem, novelty, external publication/review/upload and model-setting claims remain outside scope.",
+          "unaffected_by_later_change": true,
+          "unaffected_rationale": "Current committed and archived bytes independently match every technical-review hash; no rebuild or experiment rerun needed.",
+          "verification_id": "V7"
+        }
+      ],
+      "verification_refs": [
+        "V7"
+      ]
+    },
+    {
+      "category": "delivery",
+      "evidence": [
+        {
+          "evidence_id": "E8",
+          "freshness": "fresh",
+          "kind": "direct-file-and-command-inspection",
+          "observed_at": "2026-10-08T05:17:42.200096+00:00",
+          "provenance": "directly_observed",
+          "source": "Local source, retained command evidence and reviewer direct verification",
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "summary": "Directly observed clean commit, ZIP integrity, every manifest hash, all 49 committed source bytes, complete bundle integrity and an independent scratch clone with exact HEAD and base ancestry.",
+          "supports_requirement_ids": [
+            "R8"
+          ]
+        }
+      ],
+      "evidence_refs": [
+        "E8"
+      ],
+      "implementation": [
+        {
+          "artifact_identifiers": [
+            "README.md",
+            "REPORT.md",
+            "RUN_CONTRACT.md",
+            "parameters.json",
+            "sources/STAGE1_SPEC.md",
+            "lean/Pilot.lean",
+            "lean/lakefile.toml",
+            "lean/lake-manifest.json",
+            "lean/lean-toolchain",
+            "results/lean_status.json",
+            "results/lean_model_review.md",
+            "results/python_model_review.md",
+            "results/python_reproduction.json",
+            "results/validation.json",
+            "results/junction_pilot.json",
+            "results/stage2_verification/lean_build.json",
+            "results/stage2_verification/lean_axioms.log",
+            "results/stage2_verification/lean_build.log",
+            "results/stage2_verification/lean_clean.log",
+            "results/stage2_verification/toolchain_archive.json",
+            "scripts/verify_lean.py",
+            "scripts/package_checkpoint.py",
+            "src/model.py",
+            "src/exhaustive.py",
+            "src/folding.py",
+            "tests/validate.py",
+            "tests/junction_pilot.py"
+          ],
+          "description": "Commit reviewed changes and verify updated portable checkpoint",
+          "implementation_id": "I8",
+          "requirement_ids": [
+            "R8"
+          ],
+          "state": "complete"
+        }
+      ],
+      "implementation_refs": [
+        "I8"
+      ],
+      "inferred_requirement": false,
+      "mandatory": true,
+      "notes": "",
+      "requirement": "Commit reviewed changes and verify updated portable checkpoint",
+      "requirement_id": "R8",
+      "source_ids": [
+        "user",
+        "frozen"
+      ],
+      "status": "PASS",
+      "verification": [
+        {
+          "evidence_ids": [
+            "E8"
+          ],
+          "method": "Independent ZIP/manifest/hash inspection and fresh scratch bundle restore",
+          "observation_kind": "actual",
+          "performed_at": "2026-10-08T05:17:42.200096+00:00",
+          "requirement_ids": [
+            "R8"
+          ],
+          "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+          "status": "PASS",
+          "summary": "Directly observed clean commit, ZIP integrity, every manifest hash, all 49 committed source bytes, complete bundle integrity and an independent scratch clone with exact HEAD and base ancestry.",
+          "verification_id": "V8"
+        }
+      ],
+      "verification_refs": [
+        "V8"
+      ]
+    }
+  ],
+  "requirements_source": [
+    {
+      "authority": "conversation_context",
+      "description": "Current explicit Stage 2 continuation request and six acceptance tasks",
+      "precedence": 0,
+      "source_id": "user",
+      "source_type": "user_prompt"
+    },
+    {
+      "authority": "snapshot",
+      "description": "Saved commit d037996 required docs, frozen parameters and Stage 1 specification",
+      "precedence": 1,
+      "source_id": "frozen",
+      "source_type": "repository_contract"
+    }
+  ],
+  "residual_work": [
+    {
+      "classification": "unfinished",
+      "material": true,
+      "requirement_ids": [
+        "R8"
+      ],
+      "residual_id": "delivery",
+      "severity": "MAJOR",
+      "status": "resolved",
+      "summary": "Commit reviewed changes, package and directly inspect the manifest/bundle restoration; then re-audit delivery."
+    }
+  ],
+  "schema_version": "1.0.0",
+  "tests_performed": [
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Source hashes and required Stage 1/model files were directly compared to saved commit d037996; frozen files match.",
+      "verification_id": "V1"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Direct lean --version reports pinned 4.19.0 commit 6caaee842e94; recorded official download and executable hashes match inspected metadata.",
+      "verification_id": "V2"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "All nine original declarations are preserved. Reviewed full relation domain, compatibility, matching/noncrossing legality, constant orientation and constructive fold-to-mask bridge; only GGAAACC is covered.",
+      "verification_id": "V3"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Independent direct Lean elaboration exited 0 with empty stderr and exact retained output for 20 theorems. Union is propext and Quot.sound; no sorry/admit/unproved project axioms/native_decide/unsafe.",
+      "verification_id": "V4"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Inspected clean/build/audit exit codes and output; independently verified every source/log hash in final receipt.",
+      "verification_id": "V5"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Inspected recorded single executions and directly verified every input/output hash against unchanged sources and original git results. Validation differs only python and seconds; junction identical. Reviewer did not rerun either runner.",
+      "verification_id": "V6"
+    },
+    {
+      "method": "Read-only source, log and hash inspection; independent direct Lean elaboration for proof",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "README, REPORT, RUN_CONTRACT, status and model reviews inspected against exact proof/build/computation evidence. Stage 3, general algorithms/family theorem, novelty, external publication/review/upload and model-setting claims remain outside scope.",
+      "verification_id": "V7"
+    },
+    {
+      "method": "Independent ZIP/manifest/hash inspection and fresh scratch bundle restore",
+      "observation_kind": "actual",
+      "state_identifier": "commit:3a6b467c6887aa07361a81688ed145fb12fd2929;archive-sha256:a4244ed8301758fa70ddff861ba60308fa1d2eaf2f55678d1efb9cb3579136c6",
+      "status": "PASS",
+      "summary": "Directly observed clean commit, ZIP integrity, every manifest hash, all 49 committed source bytes, complete bundle integrity and an independent scratch clone with exact HEAD and base ancestry.",
+      "verification_id": "V8"
+    }
+  ],
+  "unsupported_completion_claims": [],
+  "verdict": "ACCEPTED"
+}

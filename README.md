@@ -1,41 +1,98 @@
-# RNA inverse folding: Stage 2 checkpoint
+# Bioinformatics — RNA inverse folding
 
-Stage 2 verification passed. Read REPORT.md for the exact finite
-claims and evidence. Stop at Stage 2; Stage 3 is not authorised.
+Research into whether every target in a restricted, infinite family of
+three-helix RNA structures can be made the unique minimum-energy fold under a
+fixed stacking-only model.
+
+**Stage 2 is complete. Stage 3 has not started.** The repository contains the
+Stage 1 problem specification, bounded Python experiments, a kernel-checked
+seven-position Lean pilot, and their verification evidence. The infinite-family
+question remains unresolved, and the literature novelty boundary is provisional.
+
+Start with the [research report](REPORT.md), [frozen problem specification](sources/STAGE1_SPEC.md)
+and [execution contract](RUN_CONTRACT.md).
+
+## What has been established
+
+| Evidence | Verified scope | Result |
+| --- | --- | --- |
+| Independent Python implementations | 87,893 sequence cases and 306,648 compatible folds | All reported energies, multiplicities and witnesses agree |
+| Elementary base-pair design checks | Eight specified instances | All pass |
+| Fixed candidate screen | 256 sequences for the single 24-position target `((((((...)))(((...))))))` | 225 unique target minima, two ties, 29 beaten targets |
+| Independent enumeration for `AAAAAAAAAUUUCCCAAAGGGUUU` | All 42,478 compatible folds | Target -10.24 kcal/mol; best alternative -9.31; gap 0.93 |
+| Lean 4.19.0 pilot for `GGAAACC` | All six admissible folds of this seven-position sequence, with a proved fold-to-mask completeness bridge | Nested target uniquely minimal at -3.26 kcal/mol; 20 kernel-checked theorem declarations |
+
+The Python validation exhausts all sequences through length eight and samples
+128 sequences at each length nine through twelve. It does not exhaust all
+sequences through length twelve. The 24-position screen is a fixed finite
+experiment, not a theorem for the target family or an estimate of general
+success probability. Three representative sequences received independent full
+fold enumeration under the unchanged 200,000-fold cap; see the report for
+coverage and skipped representatives.
+
+The Lean proof is about `GGAAACC` only. It does not formalize the Python folding
+algorithm, the 24-position certificate or the full stacking table. Its complete
+transitive axiom set is **`propext` and `Quot.sound`**. There are no `sorry`,
+`admit`, additional unproved project axioms or native computation proof shortcuts.
+See the [Lean model review](results/lean_model_review.md),
+[axiom output](results/stage2_verification/lean_axioms.log) and
+[final Stage 2 acceptance review](results/stage2_verification/independent_review_final.md).
+The review was performed by a separate internal agent; it is not external
+mathematical review.
+
+## Frozen mathematical model
+
+- Alphabet: A, C, G and U. Watson–Crick pairs AU, UA, CG and GC only.
+- Folds: noncrossing partial matchings, with at least three enclosed positions
+  per pair. Competitors include empty structures, isolated pairs and all other
+  admissible topologies, with no requirement to resemble the target.
+- Energy: sum only immediately adjacent nested stacks, counted once each.
+  Loop, terminal, coaxial and other thermodynamic contributions are omitted.
+- Parameters: the frozen two-decimal Turner 2004 values at 37 °C, using exact
+  integer hundredths of kcal/mol. See [parameters.json](parameters.json).
+- Research family: an outer helix around two hairpins, with all three stems and
+  both loops at least length three, and no unpaired junction positions.
+
+This is a mathematical stacking-only model, not the full Turner model. Exact
+arithmetic does not remove experimental parameter uncertainty, and these results
+do not establish biological performance.
+
+## Get the repository
+
+```sh
+git clone https://github.com/lukeroyle-beep/Bioinformatics.git
+cd Bioinformatics
+```
+
+The Git history preserves the initial model and computations, the saved input
+checkpoint `d037996e324a1fc0923270f950e5a540ac0a45d6`, and the verified Stage 2
+commit `3a6b467c6887aa07361a81688ed145fb12fd2929`. The GitHub migration adds
+presentation and provenance updates; it does not change the mathematical model
+or rerun or expand the experiments.
 
 ## Reproduce the Lean verification
 
-The project is dependency-free apart from the official Lean distribution,
-pinned by `lean/lean-toolchain` to `leanprover/lean4:v4.19.0`.
-The verified installation is project-local at
-`.tools/lean-4.19.0-darwin_aarch64/` on macOS ARM64. It reports:
+Install the appropriate official [Lean 4.19.0 distribution](https://github.com/leanprover/lean4/releases/tag/v4.19.0),
+or use an existing toolchain manager with the pin in [lean/lean-toolchain](lean/lean-toolchain).
+No external Lean packages are required. The verified toolchain reported:
 
 ```text
 Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)
 Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
 ```
 
-Obtain the appropriate official [Lean 4.19.0 release](https://github.com/leanprover/lean4/releases/tag/v4.19.0)
-for your platform or install that exact version with your existing toolchain
-manager. No global installation change is required. The compiler is excluded
-from the checkpoint. The macOS ARM64 archive used here was
-`lean-4.19.0-darwin_aarch64.tar.zst`, 329275227 bytes, locally measured SHA-256
-`94d4246fd90a152a4819419498d3e45c941a31638a57a0a8e32561494ab6cea7`.
-This is a recorded download hash, not a separately published signature.
-
-From this repository root, use the absolute or relative compiler `bin` directory:
+With the pinned executables on PATH, run from the repository root:
 
 ```sh
-python3 scripts/verify_lean.py --bin-dir .tools/lean-4.19.0-darwin_aarch64/bin
+python3 scripts/verify_lean.py --output-dir /tmp/rna-stage2-lean-recheck
 ```
 
-Alternatively, with the pinned `lean` and `lake` on PATH, omit `--bin-dir`.
-The script checks the actual version, runs `lake clean`, `lake build`, then
-`lake env lean Pilot.lean` to retain every transitive axiom report. It writes
-complete logs, exit codes, source hash and a receipt to
-`results/stage2_verification/`. For a later reproduction without overwriting
-checkpoint evidence, pass `--output-dir /tmp/rna-lean-recheck`.
-The equivalent direct commands, from `lean/`, are:
+For a standalone distribution, also pass `--bin-dir /path/to/lean/bin`.
+The script checks the actual version, runs `lake clean` and `lake build`, then
+explicitly elaborates `Pilot.lean` to capture every theorem's transitive axioms.
+It retains commands, exit codes, output and the source hash. A separate output
+directory preserves the committed build evidence. The equivalent direct commands
+from `lean/` are:
 
 ```sh
 lean --version
@@ -45,45 +102,69 @@ lake build
 lake env lean Pilot.lean
 ```
 
-The seven-position `GGAAACC` pilot is separate from the length-24 computational
-certificate. See `lean/Pilot.lean` and `results/lean_model_review.md` for the
-formal fold-to-mask bridge and exact limits. It does not prove the Python
-algorithm or the infinite-family research question.
+The compiler and `.lake` build cache are excluded from Git. The official macOS
+ARM64 archive used for verification was `lean-4.19.0-darwin_aarch64.tar.zst`,
+329275227 bytes, with locally measured SHA-256
+`94d4246fd90a152a4819419498d3e45c941a31638a57a0a8e32561494ab6cea7`.
+This identifies the downloaded bytes; it is not a separately published signature.
+[Toolchain provenance](results/stage2_verification/toolchain_archive.json) records
+its URL, version and binary hashes. The earlier Linux startup failure is retained
+as historical evidence, not a current blocker.
 
-## Reproduce the finite computations
+## Reproduce the Python computations
 
-The original run used Python 3.12.14. This checkpoint reproduced both runners
-once with CPython 3.14.4 and its standard library:
+Only the Python standard library is needed. The original run used Python
+3.12.14; Stage 2 reproduced both unchanged runners once with CPython 3.14.4:
 
 ```sh
 python3 tests/validate.py
 python3 tests/junction_pilot.py
 ```
 
-The bounds and seeds are frozen in RUN_CONTRACT.md. The junction runner retains
-the 200,000-fold enumeration cap and logs skipped representatives; all 256
-candidates are evaluated by the interval algorithm. These commands overwrite
-the corresponding JSON outputs. Only Python version and elapsed time changed
-in validation.json; its digest and all numerical results matched. The junction
-JSON matched byte-for-byte. Full reproduction evidence is in
-`results/python_reproduction.json` and `results/python_model_review.md`.
+These commands overwrite the corresponding result JSON files, so use a separate
+clone if you want to preserve an unchanged checkpoint checkout. Bounds, seeds
+and the enumeration cap are in [RUN_CONTRACT.md](RUN_CONTRACT.md).
+The reproduced validation digest was
+`d10732f2a5689293eed515e8984b6cbd074399f61f951faf9fd5a8d67a7a864a`.
+Only the recorded Python version and runtime changed; all numerical results
+matched. The junction JSON matched byte-for-byte.
 
-## Restore or package the checkpoint
+See [Python reproduction evidence](results/python_reproduction.json) and
+[model and coverage review](results/python_model_review.md).
 
-Verify the outer `MANIFEST.json`, then restore the complete local history:
+## Repository guide
 
-```sh
-git clone RNA_Stage_2.bundle recovered-repository
-```
+| Path | Contents |
+| --- | --- |
+| [sources/STAGE1_SPEC.md](sources/STAGE1_SPEC.md) | Problem, frozen conventions and provisional literature boundary |
+| [parameters.json](parameters.json) | Exact stacking constants and orientation |
+| [src/](src/) | Scorer, interval folding algorithm and independent enumerator |
+| [tests/](tests/) | The two bounded experiment runners |
+| [lean/Pilot.lean](lean/Pilot.lean) | Seven-position formal model, completeness bridge and proofs |
+| [results/](results/) | Computational outputs, reviews, build logs and axiom reports |
+| [scripts/](scripts/) | Clean Lean verification and local checkpoint packaging |
+| [REPORT.md](REPORT.md) | Detailed findings, provenance and limitations |
 
-The saved input commit was `d037996e324a1fc0923270f950e5a540ac0a45d6`.
-The updated bundle's commit and every source hash are in its manifest.
-No remote repository has been published. To package a clean committed checkout:
+Evidence records are dated snapshots. The original blocked Lean receipt and
+pre-delivery review are retained alongside the successful build and final
+acceptance; they do not describe the current Stage 2 status. Machine paths in
+receipts identify the original execution environment and are not portable
+installation requirements.
+
+## Portable checkpoint and current boundary
+
+To create a source snapshot, complete Git bundle and SHA-256 manifest from a
+clean committed checkout:
 
 ```sh
 python3 scripts/package_checkpoint.py
 ```
 
-This creates a ZIP, manifest and checksum in ignored `checkpoints/` and verifies
-a fresh bundle restoration. It excludes the compiler, build cache and credentials.
-The memory-intake copy remains local and pending; no Drive upload is authorised.
+The script verifies a fresh bundle restoration and writes an archive and checksum
+to ignored `checkpoints/`. To restore such an archive, verify its `MANIFEST.json`,
+then run `git clone RNA_Stage_2.bundle recovered-repository`.
+
+The GitHub migration was expressly authorised after Stage 2 verification.
+No Stage 3 research, external reviewer contact or Google Drive memory upload
+is included. The pending memory-intake copy remains local. A requested later
+Astra Extra High configuration has not been verified or claimed.

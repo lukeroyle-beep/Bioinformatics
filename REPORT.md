@@ -144,10 +144,23 @@ result or novelty conclusion follows from this checkpoint. One later question is
 whether a construction or obstruction can cover the unbounded target family under
 the unchanged model; no work on that question was started here.
 
-No remote repository was published, external reviewers contacted or pending Google
-Drive memory copy uploaded. The memory-intake copy remains local and pending.
+At the Stage 2 verification checkpoint, no remote repository had been published,
+external reviewers contacted or pending Google Drive memory copy uploaded. The
+memory-intake copy remains local and pending.
 The active model/reasoning configuration was not verified; Astra Extra High and a
 measured usage percentage are not claimed.
+
+## GitHub migration, 8 October 2026
+
+After Stage 2 acceptance, Luke explicitly authorised migration into
+[Bioinformatics](https://github.com/lukeroyle-beep/Bioinformatics) and a repository
+README before any Stage 3 work. The destination was verified empty and public.
+The migration preserves the complete research commit history, frozen inputs,
+source code, experiment outputs, proof and build receipts. It adds a project
+overview and the final Stage 2 acceptance record; no research computation or
+mathematical statement changes. The original no-publication boundary above
+describes the earlier verification task and is superseded for this named
+repository only. The Stage 3 and Google Drive upload boundaries remain in force.
 
 ## Sources and interpretation boundary
 

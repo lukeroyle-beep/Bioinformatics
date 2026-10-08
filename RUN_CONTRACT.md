@@ -66,3 +66,19 @@ review. No remote repository publication, external reviewer contact, pending
 Google Drive memory upload or background task is authorised. No recovery codes
 are needed, read or used. The requested later Astra Extra High setting is not
 verified here and is not claimed. Stage 3 remains unauthorised.
+
+## Authorised repository migration, 8 October 2026
+
+After Stage 2 completion, Luke supplied
+https://github.com/lukeroyle-beep/Bioinformatics and explicitly requested migration
+of the work done so far and a README before Stage 3. This authorises pushing the
+reviewed project and its existing commit history to that repository. The remote
+was inspected and found empty and public; its visibility is not changed. This
+permission supersedes the earlier no-remote-publication restriction only for the
+named repository. Preserve original dated evidence, use a normal push without
+force, retain the frozen model and search bounds, and verify remote content.
+
+Migration changes are documentation, retained final acceptance evidence and the
+checkpoint packager's publication wording. No experiment reruns, additional
+searches, Stage 3 work, external reviewer contact or Google Drive memory upload
+are authorised by this migration.
