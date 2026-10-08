@@ -1,0 +1,100 @@
+{
+  "batch": "original_loop_check",
+  "model": "wc-stack-2004-2dp-span3-v1",
+  "status": "COMPLETED",
+  "construction": "stage2_extension",
+  "cases": 4,
+  "unique": 2,
+  "tied": 2,
+  "beaten": 0,
+  "minimum_gap": 0,
+  "python": "3.14.4",
+  "elapsed_seconds": 0.007714624982327223,
+  "source_sha256": {
+    "parameters.json": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d",
+    "src/model.py": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+    "src/folding.py": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+    "src/exhaustive.py": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+    "research/stage3.py": "693ebb4a65461a29571a9ecfdfd9585088872059939e693f3c02999baffe6ae5",
+    "research/run_stage3.py": "277727e4d2e63f2ae6d2409bfc29e88f476515d2edfb466cb5e124b63fe88df1"
+  },
+  "rows": [
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "stage2_extension",
+      "sequence": "AAAAAAAAAUUUCCCAAAGGGUUU",
+      "target": "((((((...)))(((...))))))",
+      "target_energy": -1024,
+      "minimum_energy": -1024,
+      "optimal_count": 1,
+      "best_alternative_energy": -931,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": "..(((((...))(((...))))))"
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "construction": "stage2_extension",
+      "sequence": "AAAAAAAAAUUUCCCAAAAGGGUUU",
+      "target": "((((((...)))(((....))))))",
+      "target_energy": -1024,
+      "minimum_energy": -1024,
+      "optimal_count": 1,
+      "best_alternative_energy": -931,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": "..(((((...))(((....))))))"
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "construction": "stage2_extension",
+      "sequence": "AAAAAAAAAAUUUCCCAAAGGGUUU",
+      "target": "((((((....)))(((...))))))",
+      "target_energy": -1024,
+      "minimum_energy": -1024,
+      "optimal_count": 3,
+      "best_alternative_energy": -1024,
+      "gap": 0,
+      "unique_target": false,
+      "alternative": ".((((((...)))(((...))))))"
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        4
+      ],
+      "construction": "stage2_extension",
+      "sequence": "AAAAAAAAAAUUUCCCAAAAGGGUUU",
+      "target": "((((((....)))(((....))))))",
+      "target_energy": -1024,
+      "minimum_energy": -1024,
+      "optimal_count": 3,
+      "best_alternative_energy": -1024,
+      "gap": 0,
+      "unique_target": false,
+      "alternative": ".((((((...)))(((....))))))"
+    }
+  ],
+  "scope": "Finite parameter cases only; all admissible folds considered by existing exact DP."
+}

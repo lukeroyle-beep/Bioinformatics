@@ -1,0 +1,63 @@
+{
+  "objective": "Investigate Stage 3 under the frozen model, retaining a safe resumable checkpoint at 70 percent account usage remaining or the Stage 3 gate, whichever occurs first.",
+  "semantic_intent": "execute",
+  "project": "RNA inverse folding",
+  "repository": "/Users/lukesmacminim41/RNA Inverse Folding",
+  "plan_confirmed": true,
+  "context_candidates": [
+    {
+      "source": "Current user Stage 3 authorization; sources/STAGE1_SPEC.md; verified Stage 2 at fc6612f; Staged Research Plan Page read 2026-10-08",
+      "authority": "canonical",
+      "available": true,
+      "verified": true,
+      "write_back_allowed": true,
+      "content_sha256": "00ddb08e306f16a82b750e4659d42a3b9f1bda2fdce10d72300d18d857a9ecaf"
+    }
+  ],
+  "constraints": [
+    "Frozen model and prior evidence unchanged",
+    "One active conjecture; sequential bounded research",
+    "Stop at safe checkpoint at 70 percent remaining; initial observation 86 percent",
+    "No Stage 4 formalization, remote push, external reviewer contact, cloud memory upload or background work",
+    "Active Astra Extra High setting is not exposed and is not claimed"
+  ],
+  "non_goals": [
+    "Biological transfer",
+    "Novelty or universal theorem based on finite evidence",
+    "Full Lean formalization"
+  ],
+  "acceptance_criteria": [
+    "Retain exact construction or obstruction candidate and known proof obligations",
+    "Retain bounded reproducible experiments, witnesses and independent numerical crosschecks",
+    "Preserve Stage 2 sources and results byte for byte",
+    "Save findings, failed approaches, current usage and next action at a safe checkpoint"
+  ],
+  "test_plan": [
+    "Check target compatibility, exact score and best alternative witnesses",
+    "Use independent explicit enumeration within declared cap",
+    "Focused regression checks for new research utilities",
+    "Verify frozen input hashes and checkpoint manifest"
+  ],
+  "affected_systems": [
+    "Local repository research files and documentation"
+  ],
+  "rollback_considerations": [
+    "Additive Stage 3 files and reviewable documentation changes; base fc6612f remains intact"
+  ],
+  "execution_authority": {
+    "task_authorized": true,
+    "action_gate": {
+      "authorized": true,
+      "action_class": "external_reversible",
+      "scope": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "source": "User: Please proceed with Stage 3. Please stop at a safe checkpoint when usage remaining reaches 70%"
+    }
+  },
+  "capability_report": {
+    "institutional_memory": {
+      "write_back_allowed": {
+        "value": true
+      }
+    }
+  }
+}

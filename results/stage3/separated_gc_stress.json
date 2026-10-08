@@ -1,0 +1,518 @@
+{
+  "batch": "separated_gc_stress",
+  "model": "wc-stack-2004-2dp-span3-v1",
+  "status": "COMPLETED",
+  "construction": "separated_gc",
+  "cases": 26,
+  "unique": 26,
+  "tied": 0,
+  "beaten": 0,
+  "minimum_gap": 93,
+  "python": "3.14.4",
+  "elapsed_seconds": 2.208405749872327,
+  "source_sha256": {
+    "parameters.json": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d",
+    "src/model.py": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+    "src/folding.py": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+    "src/exhaustive.py": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+    "research/stage3.py": "693ebb4a65461a29571a9ecfdfd9585088872059939e693f3c02999baffe6ae5",
+    "research/run_stage3.py": "27060999ffb7f8cc21952f1bc959dd6c0e5417456bb76fcd17dfe8f91472c84a"
+  },
+  "rows": [
+    {
+      "params": [
+        6,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAACCCAAAGGGGGGAAACCCUUUUUU",
+      "target": "(((((((((...)))(((...)))))))))",
+      "target_energy": -1769,
+      "minimum_energy": -1769,
+      "optimal_count": 1,
+      "best_alternative_energy": -1676,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))(((...))))))))."
+    },
+    {
+      "params": [
+        12,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAACCCAAAGGGGGGAAACCCUUUUUUUUUUUU",
+      "target": "(((((((((((((((...)))(((...)))))))))))))))",
+      "target_energy": -2327,
+      "minimum_energy": -2327,
+      "optimal_count": 1,
+      "best_alternative_energy": -2234,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((...)))(((...))))))))))))))."
+    },
+    {
+      "params": [
+        30,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCAAAGGGGGGAAACCCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+      "target": "(((((((((((((((((((((((((((((((((...)))(((...)))))))))))))))))))))))))))))))))",
+      "target_energy": -4001,
+      "minimum_energy": -4001,
+      "optimal_count": 1,
+      "best_alternative_energy": -3908,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((...)))(((...))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        60,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCAAAGGGGGGAAACCCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+      "target": "(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...)))(((...)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+      "target_energy": -6791,
+      "minimum_energy": -6791,
+      "optimal_count": 1,
+      "best_alternative_energy": -6698,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...)))(((...))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        6,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCCAAAGGGGGGGGGAAACCCUUU",
+      "target": "(((((((((...))))))(((...))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        12,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCCCCCCCCAAAGGGGGGGGGGGGGGGAAACCCUUU",
+      "target": "(((((((((((((((...))))))))))))(((...))))))",
+      "target_energy": -4424,
+      "minimum_energy": -4424,
+      "optimal_count": 1,
+      "best_alternative_energy": -4331,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((...))))))))))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        30,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAACCCUUU",
+      "target": "(((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))(((...))))))",
+      "target_energy": -10292,
+      "minimum_energy": -10292,
+      "optimal_count": 1,
+      "best_alternative_energy": -10199,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        60,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAACCCUUU",
+      "target": "(((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))(((...))))))",
+      "target_energy": -20072,
+      "minimum_energy": -20072,
+      "optimal_count": 1,
+      "best_alternative_energy": -19979,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        6,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGGAAACCCCCCUUU",
+      "target": "((((((...)))((((((...)))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((((...))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        12,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGGGGGGGGAAACCCCCCCCCCCCUUU",
+      "target": "((((((...)))((((((((((((...)))))))))))))))",
+      "target_energy": -4424,
+      "minimum_energy": -4424,
+      "optimal_count": 1,
+      "best_alternative_energy": -4331,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((((((((((...))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        30,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCUUU",
+      "target": "((((((...)))((((((((((((((((((((((((((((((...)))))))))))))))))))))))))))))))))",
+      "target_energy": -10292,
+      "minimum_energy": -10292,
+      "optimal_count": 1,
+      "best_alternative_energy": -10199,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        60,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCUUU",
+      "target": "((((((...)))((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...)))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))",
+      "target_energy": -20072,
+      "minimum_energy": -20072,
+      "optimal_count": 1,
+      "best_alternative_energy": -19979,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((...))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        6,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAAGGGGGGAAACCCUUU",
+      "target": "((((((......)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((......)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        12,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAAAAAAAAGGGGGGAAACCCUUU",
+      "target": "((((((............)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((............)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        30,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGAAACCCUUU",
+      "target": "((((((..............................)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((..............................)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        60,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGAAACCCUUU",
+      "target": "((((((............................................................)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((............................................................)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        6
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAAAACCCUUU",
+      "target": "((((((...)))(((......))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((......)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        12
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAAAAAAAAAACCCUUU",
+      "target": "((((((...)))(((............))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((............)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        30
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCUUU",
+      "target": "((((((...)))(((..............................))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((..............................)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        60
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCUUU",
+      "target": "((((((...)))(((............................................................))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((............................................................)))))."
+    },
+    {
+      "params": [
+        12,
+        12,
+        12,
+        12,
+        12
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAACCCCCCCCCCCCAAAAAAAAAAAAGGGGGGGGGGGGGGGGGGGGGGGGAAAAAAAAAAAACCCCCCCCCCCCUUUUUUUUUUUU",
+      "target": "((((((((((((((((((((((((............))))))))))))((((((((((((............))))))))))))))))))))))))",
+      "target_energy": -8195,
+      "minimum_energy": -8195,
+      "optimal_count": 1,
+      "best_alternative_energy": -8102,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((((((((((((((((............))))))))))))((((((((((((............)))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        30,
+        3,
+        60,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAACCCUUU",
+      "target": "(((((((((((((((((((((((((((((((((............................................................))))))))))))))))))))))))))))))(((...))))))",
+      "target_energy": -10292,
+      "minimum_energy": -10292,
+      "optimal_count": 1,
+      "best_alternative_energy": -10199,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((............................................................))))))))))))))))))))))))))))))(((...)))))."
+    },
+    {
+      "params": [
+        30,
+        3,
+        3,
+        3,
+        60
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCAAAGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCUUUUUUUUUUUUUUUUUUUUUUUUUUUUUU",
+      "target": "(((((((((((((((((((((((((((((((((...)))(((............................................................)))))))))))))))))))))))))))))))))",
+      "target_energy": -4001,
+      "minimum_energy": -4001,
+      "optimal_count": 1,
+      "best_alternative_energy": -3908,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((((((((((((((((((((...)))(((............................................................))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        30,
+        3,
+        60
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCCCCCCCCCCCCCCCCCCCCCCCCCCCCUUU",
+      "target": "((((((...)))((((((((((((((((((((((((((((((............................................................)))))))))))))))))))))))))))))))))",
+      "target_energy": -10292,
+      "minimum_energy": -10292,
+      "optimal_count": 1,
+      "best_alternative_energy": -10199,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((((((((((((((((((((((((((((............................................................))))))))))))))))))))))))))))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        60,
+        60
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACCCUUU",
+      "target": "((((((............................................................)))(((............................................................))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((............................................................)))(((............................................................)))))."
+    },
+    {
+      "params": [
+        12,
+        3,
+        9,
+        30,
+        6
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAAAAAAAAACCCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGGGGGGGGGGGGAAAAAACCCCCCCCCUUUUUUUUUUUU",
+      "target": "(((((((((((((((..............................)))(((((((((......)))))))))))))))))))))",
+      "target_energy": -4283,
+      "minimum_energy": -4283,
+      "optimal_count": 1,
+      "best_alternative_energy": -4190,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((((((((..............................)))(((((((((......))))))))))))))))))))."
+    }
+  ],
+  "scope": "Finite parameter cases only; all admissible folds considered by existing exact DP."
+}

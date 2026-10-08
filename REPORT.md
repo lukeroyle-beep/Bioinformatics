@@ -1,5 +1,10 @@
 # Stage 2: finite baseline and verification checkpoint
 
+Current continuation: [Stage 3 research checkpoint](research/STAGE3_REPORT.md)
+now records a general construction candidate, its informal argument, 269 finite
+cases and an additional literature finding. Stage 4 verification is pending.
+The dated Stage 2 report below is retained unchanged apart from this pointer.
+
 8 October 2026. **Stage 2 verification passed: the Python baseline was reproduced and the seven-position Lean pilot has a clean kernel-checked build with a formal completeness bridge. Stage 3 has not begun.** Stage 1 remains complete as a bounded scoping exercise. The model is explicit; novelty of the infinite-family question remains provisional.
 
 ## Frozen question and model
@@ -169,4 +174,3 @@ repository only. The Stage 3 and Google Drive upload boundaries remain in force.
 - [Turner 2004 Watson–Crick stack table](https://rna.urmc.rochester.edu/NNDB/parameter_tables/turner_2004_rnastructure/turner_2004_watson_crick_stack.htm) and [helix example](https://rna.urmc.rochester.edu/NNDB/rna_2004/rna_2004_watson_crick_helices.html). The two-decimal table, not the one-decimal software table, defines this pilot.
 - [Official Lean 4.19.0 release](https://github.com/leanprover/lean4/releases/tag/v4.19.0) and [executable-path source](https://github.com/leanprover/lean4/blob/v4.19.0/src/util/path.cpp).
 - [Related base-pair formalisation](https://github.com/ajogalekar/rna-at-most-two-short-helices), documentation and licence inspected; no independent build claimed.
-

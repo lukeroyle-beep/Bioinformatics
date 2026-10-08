@@ -1,0 +1,221 @@
+{
+  "status": "PASS",
+  "python": "3.14.4",
+  "elapsed_seconds": 2.1587758753448725,
+  "cap_per_case": 200000,
+  "source_sha256": {
+    "research/check_stage3.py": "d054dcc2c019e1cc1e3f032fa026239ebcbf0e44936ee9dc715993c69debd229",
+    "research/stage3.py": "693ebb4a65461a29571a9ecfdfd9585088872059939e693f3c02999baffe6ae5",
+    "tests/junction_pilot.py": "ef05936cae48a1d8a67c397ab8ab07b2fe29c5148fb43c01355db7452f1a9479",
+    "src/exhaustive.py": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+    "src/model.py": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+    "src/folding.py": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+    "parameters.json": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d"
+  },
+  "cases": [
+    {
+      "construction": "separated_gc",
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "sequence": "AAACCCAAAGGGGGGAAACCCUUU",
+      "compatible_folds": 29304,
+      "status": "PASS",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 441,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1490,
+          1
+        ],
+        [
+          -1397,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "separated_gc",
+      "params": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "sequence": "AAAACCCAAAGGGGGGAAACCCUUUU",
+      "compatible_folds": 108771,
+      "status": "PASS",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 1764,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1583,
+          1
+        ],
+        [
+          -1490,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "separated_gc",
+      "params": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "sequence": "AAACCCCAAAGGGGGGGAAACCCUUU",
+      "compatible_folds": 97512,
+      "status": "PASS",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 588,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1816,
+          1
+        ],
+        [
+          -1723,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "separated_gc",
+      "params": [
+        3,
+        3,
+        4,
+        3,
+        3
+      ],
+      "sequence": "AAACCCAAAGGGGGGGAAACCCCUUU",
+      "compatible_folds": 97512,
+      "status": "PASS",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 1764,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1816,
+          1
+        ],
+        [
+          -1723,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "separated_gc",
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "sequence": "AAACCCAAAAGGGGGGAAACCCUUU",
+      "compatible_folds": 32358,
+      "status": "PASS",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 588,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1490,
+          1
+        ],
+        [
+          -1397,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "separated_gc",
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "sequence": "AAACCCAAAGGGGGGAAAACCCUUU",
+      "compatible_folds": 32358,
+      "status": "PASS",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "gap": 93,
+      "mixed_stack_folds": 441,
+      "lemma_status": "ALL_ENUMERATED_FOLDS_PASS",
+      "first_two_levels": [
+        [
+          -1490,
+          1
+        ],
+        [
+          -1397,
+          4
+        ]
+      ]
+    },
+    {
+      "construction": "stage2_extension",
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "sequence": "AAAAAAAAAAUUUCCCAAAGGGUUU",
+      "compatible_folds": 68838,
+      "status": "PASS",
+      "target_energy": -1024,
+      "minimum_energy": -1024,
+      "optimal_count": 3,
+      "gap": 0,
+      "mixed_stack_folds": 0,
+      "lemma_status": "NOT_APPLICABLE",
+      "first_two_levels": [
+        [
+          -1024,
+          3
+        ],
+        [
+          -931,
+          32
+        ]
+      ]
+    }
+  ],
+  "scope": "Independent enumeration and scoring; finite lemma checks only; no Lean proof."
+}

@@ -1,0 +1,4641 @@
+{
+  "batch": "separated_gc_grid",
+  "model": "wc-stack-2004-2dp-span3-v1",
+  "status": "COMPLETED",
+  "construction": "separated_gc",
+  "cases": 243,
+  "unique": 243,
+  "tied": 0,
+  "beaten": 0,
+  "minimum_gap": 93,
+  "python": "3.14.4",
+  "elapsed_seconds": 0.777523749973625,
+  "source_sha256": {
+    "parameters.json": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d",
+    "src/model.py": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+    "src/folding.py": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+    "src/exhaustive.py": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+    "research/stage3.py": "693ebb4a65461a29571a9ecfdfd9585088872059939e693f3c02999baffe6ae5",
+    "research/run_stage3.py": "277727e4d2e63f2ae6d2409bfc29e88f476515d2edfb466cb5e124b63fe88df1"
+  },
+  "rows": [
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAACCCUUU",
+      "target": "((((((...)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAACCCUUU",
+      "target": "((((((...)))(((....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGAAAAACCCUUU",
+      "target": "((((((...)))(((.....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGAAACCCUUU",
+      "target": "((((((....)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGAAAACCCUUU",
+      "target": "((((((....)))(((....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGAAAAACCCUUU",
+      "target": "((((((....)))(((.....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGAAACCCUUU",
+      "target": "((((((.....)))(((...))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGAAAACCCUUU",
+      "target": "((((((.....)))(((....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGAAAAACCCUUU",
+      "target": "((((((.....)))(((.....))))))",
+      "target_energy": -1490,
+      "minimum_energy": -1490,
+      "optimal_count": 1,
+      "best_alternative_energy": -1397,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGAAACCCCUUU",
+      "target": "((((((...)))((((...)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGAAAACCCCUUU",
+      "target": "((((((...)))((((....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGAAAAACCCCUUU",
+      "target": "((((((...)))((((.....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGAAACCCCUUU",
+      "target": "((((((....)))((((...)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGAAAACCCCUUU",
+      "target": "((((((....)))((((....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGAAAAACCCCUUU",
+      "target": "((((((....)))((((.....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGAAACCCCUUU",
+      "target": "((((((.....)))((((...)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGAAAACCCCUUU",
+      "target": "((((((.....)))((((....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGAAAAACCCCUUU",
+      "target": "((((((.....)))((((.....)))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGAAACCCCCUUU",
+      "target": "((((((...)))(((((...))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((...)))(((((....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((...)))(((((.....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((...)))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGGAAACCCCCUUU",
+      "target": "((((((....)))(((((...))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((....)))(((((....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((....)))(((((.....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((....)))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGGAAACCCCCUUU",
+      "target": "((((((.....)))(((((...))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((.....)))(((((....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        3,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCAAAAAGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((.....)))(((((.....))))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((.....)))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGAAACCCUUU",
+      "target": "(((((((...))))(((...))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGAAAACCCUUU",
+      "target": "(((((((...))))(((....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGAAAAACCCUUU",
+      "target": "(((((((...))))(((.....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGAAACCCUUU",
+      "target": "(((((((....))))(((...))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGAAAACCCUUU",
+      "target": "(((((((....))))(((....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGAAAAACCCUUU",
+      "target": "(((((((....))))(((.....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGAAACCCUUU",
+      "target": "(((((((.....))))(((...))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGAAAACCCUUU",
+      "target": "(((((((.....))))(((....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGAAAAACCCUUU",
+      "target": "(((((((.....))))(((.....))))))",
+      "target_energy": -1816,
+      "minimum_energy": -1816,
+      "optimal_count": 1,
+      "best_alternative_energy": -1723,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGAAACCCCUUU",
+      "target": "(((((((...))))((((...)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGAAAACCCCUUU",
+      "target": "(((((((...))))((((....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGAAAAACCCCUUU",
+      "target": "(((((((...))))((((.....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGAAACCCCUUU",
+      "target": "(((((((....))))((((...)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGAAAACCCCUUU",
+      "target": "(((((((....))))((((....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGAAAAACCCCUUU",
+      "target": "(((((((....))))((((.....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGAAACCCCUUU",
+      "target": "(((((((.....))))((((...)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGAAAACCCCUUU",
+      "target": "(((((((.....))))((((....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGAAAAACCCCUUU",
+      "target": "(((((((.....))))((((.....)))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGGAAACCCCCUUU",
+      "target": "(((((((...))))(((((...))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGGAAAACCCCCUUU",
+      "target": "(((((((...))))(((((....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAGGGGGGGGGAAAAACCCCCUUU",
+      "target": "(((((((...))))(((((.....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGGAAACCCCCUUU",
+      "target": "(((((((....))))(((((...))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGGAAAACCCCCUUU",
+      "target": "(((((((....))))(((((....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAGGGGGGGGGAAAAACCCCCUUU",
+      "target": "(((((((....))))(((((.....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGGAAACCCCCUUU",
+      "target": "(((((((.....))))(((((...))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGGAAAACCCCCUUU",
+      "target": "(((((((.....))))(((((....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        4,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCAAAAAGGGGGGGGGAAAAACCCCCUUU",
+      "target": "(((((((.....))))(((((.....))))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGAAACCCUUU",
+      "target": "((((((((...)))))(((...))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGAAAACCCUUU",
+      "target": "((((((((...)))))(((....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGAAAAACCCUUU",
+      "target": "((((((((...)))))(((.....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGAAACCCUUU",
+      "target": "((((((((....)))))(((...))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGAAAACCCUUU",
+      "target": "((((((((....)))))(((....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGAAAAACCCUUU",
+      "target": "((((((((....)))))(((.....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGAAACCCUUU",
+      "target": "((((((((.....)))))(((...))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((...)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGAAAACCCUUU",
+      "target": "((((((((.....)))))(((....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGAAAAACCCUUU",
+      "target": "((((((((.....)))))(((.....))))))",
+      "target_energy": -2142,
+      "minimum_energy": -2142,
+      "optimal_count": 1,
+      "best_alternative_energy": -2049,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((.....)))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGAAACCCCUUU",
+      "target": "((((((((...)))))((((...)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGAAAACCCCUUU",
+      "target": "((((((((...)))))((((....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGAAAAACCCCUUU",
+      "target": "((((((((...)))))((((.....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGAAACCCCUUU",
+      "target": "((((((((....)))))((((...)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGAAAACCCCUUU",
+      "target": "((((((((....)))))((((....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGAAAAACCCCUUU",
+      "target": "((((((((....)))))((((.....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGAAACCCCUUU",
+      "target": "((((((((.....)))))((((...)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))((((...))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGAAAACCCCUUU",
+      "target": "((((((((.....)))))((((....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))((((....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGAAAAACCCCUUU",
+      "target": "((((((((.....)))))((((.....)))))))",
+      "target_energy": -2468,
+      "minimum_energy": -2468,
+      "optimal_count": 1,
+      "best_alternative_energy": -2375,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))((((.....))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGGAAACCCCCUUU",
+      "target": "((((((((...)))))(((((...))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((((...)))))(((((....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAGGGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((((...)))))(((((.....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGGAAACCCCCUUU",
+      "target": "((((((((....)))))(((((...))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((((....)))))(((((....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAGGGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((((....)))))(((((.....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGGAAACCCCCUUU",
+      "target": "((((((((.....)))))(((((...))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((((...)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGGAAAACCCCCUUU",
+      "target": "((((((((.....)))))(((((....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((((....)))))))."
+    },
+    {
+      "params": [
+        3,
+        5,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAACCCCCAAAAAGGGGGGGGGGAAAAACCCCCUUU",
+      "target": "((((((((.....)))))(((((.....))))))))",
+      "target_energy": -2794,
+      "minimum_energy": -2794,
+      "optimal_count": 1,
+      "best_alternative_energy": -2701,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))))(((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGAAACCCUUUU",
+      "target": "(((((((...)))(((...)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGAAAACCCUUUU",
+      "target": "(((((((...)))(((....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGAAAAACCCUUUU",
+      "target": "(((((((...)))(((.....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGAAACCCUUUU",
+      "target": "(((((((....)))(((...)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGAAAACCCUUUU",
+      "target": "(((((((....)))(((....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGAAAAACCCUUUU",
+      "target": "(((((((....)))(((.....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGAAACCCUUUU",
+      "target": "(((((((.....)))(((...)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGAAAACCCUUUU",
+      "target": "(((((((.....)))(((....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGAAAAACCCUUUU",
+      "target": "(((((((.....)))(((.....)))))))",
+      "target_energy": -1583,
+      "minimum_energy": -1583,
+      "optimal_count": 1,
+      "best_alternative_energy": -1490,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGAAACCCCUUUU",
+      "target": "(((((((...)))((((...))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((...)))((((....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((...)))((((.....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGAAACCCCUUUU",
+      "target": "(((((((....)))((((...))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((....)))((((....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((....)))((((.....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGAAACCCCUUUU",
+      "target": "(((((((.....)))((((...))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((.....)))((((....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((.....)))((((.....))))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((...)))(((((...)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((...)))(((((....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((...)))(((((.....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((...)))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((....)))(((((...)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((....)))(((((....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((....)))(((((.....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((....)))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((.....)))(((((...)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((.....)))(((((....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        3,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCAAAAAGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((.....)))(((((.....)))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((.....)))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGAAACCCUUUU",
+      "target": "((((((((...))))(((...)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGAAAACCCUUUU",
+      "target": "((((((((...))))(((....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGAAAAACCCUUUU",
+      "target": "((((((((...))))(((.....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGAAACCCUUUU",
+      "target": "((((((((....))))(((...)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGAAAACCCUUUU",
+      "target": "((((((((....))))(((....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGAAAAACCCUUUU",
+      "target": "((((((((....))))(((.....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGAAACCCUUUU",
+      "target": "((((((((.....))))(((...)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGAAAACCCUUUU",
+      "target": "((((((((.....))))(((....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGAAAAACCCUUUU",
+      "target": "((((((((.....))))(((.....)))))))",
+      "target_energy": -1909,
+      "minimum_energy": -1909,
+      "optimal_count": 1,
+      "best_alternative_energy": -1816,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGAAACCCCUUUU",
+      "target": "((((((((...))))((((...))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGAAAACCCCUUUU",
+      "target": "((((((((...))))((((....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGAAAAACCCCUUUU",
+      "target": "((((((((...))))((((.....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGAAACCCCUUUU",
+      "target": "((((((((....))))((((...))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGAAAACCCCUUUU",
+      "target": "((((((((....))))((((....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGAAAAACCCCUUUU",
+      "target": "((((((((....))))((((.....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGAAACCCCUUUU",
+      "target": "((((((((.....))))((((...))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGAAAACCCCUUUU",
+      "target": "((((((((.....))))((((....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGAAAAACCCCUUUU",
+      "target": "((((((((.....))))((((.....))))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGGAAACCCCCUUUU",
+      "target": "((((((((...))))(((((...)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGGAAAACCCCCUUUU",
+      "target": "((((((((...))))(((((....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "((((((((...))))(((((.....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGGAAACCCCCUUUU",
+      "target": "((((((((....))))(((((...)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGGAAAACCCCCUUUU",
+      "target": "((((((((....))))(((((....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "((((((((....))))(((((.....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGGAAACCCCCUUUU",
+      "target": "((((((((.....))))(((((...)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGGAAAACCCCCUUUU",
+      "target": "((((((((.....))))(((((....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        4,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCAAAAAGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "((((((((.....))))(((((.....)))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGAAACCCUUUU",
+      "target": "(((((((((...)))))(((...)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGAAAACCCUUUU",
+      "target": "(((((((((...)))))(((....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGAAAAACCCUUUU",
+      "target": "(((((((((...)))))(((.....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGAAACCCUUUU",
+      "target": "(((((((((....)))))(((...)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGAAAACCCUUUU",
+      "target": "(((((((((....)))))(((....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGAAAAACCCUUUU",
+      "target": "(((((((((....)))))(((.....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGAAACCCUUUU",
+      "target": "(((((((((.....)))))(((...)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((...))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGAAAACCCUUUU",
+      "target": "(((((((((.....)))))(((....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGAAAAACCCUUUU",
+      "target": "(((((((((.....)))))(((.....)))))))",
+      "target_energy": -2235,
+      "minimum_energy": -2235,
+      "optimal_count": 1,
+      "best_alternative_energy": -2142,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((.....))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGAAACCCCUUUU",
+      "target": "(((((((((...)))))((((...))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((((...)))))((((....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((((...)))))((((.....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGAAACCCCUUUU",
+      "target": "(((((((((....)))))((((...))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((((....)))))((((....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((((....)))))((((.....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGAAACCCCUUUU",
+      "target": "(((((((((.....)))))((((...))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))((((...)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGAAAACCCCUUUU",
+      "target": "(((((((((.....)))))((((....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))((((....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGAAAAACCCCUUUU",
+      "target": "(((((((((.....)))))((((.....))))))))",
+      "target_energy": -2561,
+      "minimum_energy": -2561,
+      "optimal_count": 1,
+      "best_alternative_energy": -2468,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))((((.....)))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((((...)))))(((((...)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((((...)))))(((((....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAGGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((((...)))))(((((.....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...)))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((((....)))))(((((...)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((((....)))))(((((....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAGGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((((....)))))(((((.....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....)))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGGAAACCCCCUUUU",
+      "target": "(((((((((.....)))))(((((...)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((((...))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGGAAAACCCCCUUUU",
+      "target": "(((((((((.....)))))(((((....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((((....))))))))."
+    },
+    {
+      "params": [
+        4,
+        5,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAACCCCCAAAAAGGGGGGGGGGAAAAACCCCCUUUU",
+      "target": "(((((((((.....)))))(((((.....)))))))))",
+      "target_energy": -2887,
+      "minimum_energy": -2887,
+      "optimal_count": 1,
+      "best_alternative_energy": -2794,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....)))))(((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGAAACCCUUUUU",
+      "target": "((((((((...)))(((...))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGAAAACCCUUUUU",
+      "target": "((((((((...)))(((....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((...)))(((.....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGAAACCCUUUUU",
+      "target": "((((((((....)))(((...))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGAAAACCCUUUUU",
+      "target": "((((((((....)))(((....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((....)))(((.....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGAAACCCUUUUU",
+      "target": "((((((((.....)))(((...))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGAAAACCCUUUUU",
+      "target": "((((((((.....)))(((....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((.....)))(((.....))))))))",
+      "target_energy": -1676,
+      "minimum_energy": -1676,
+      "optimal_count": 1,
+      "best_alternative_energy": -1583,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((...)))((((...)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((...)))((((....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((...)))((((.....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((....)))((((...)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((....)))((((....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((....)))((((.....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((.....)))((((...)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((.....)))((((....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((.....)))((((.....)))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((...)))(((((...))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((...)))(((((....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((...)))(((((.....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((...)))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((....)))(((((...))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((....)))(((((....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((....)))(((((.....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((....)))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((.....)))(((((...))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((.....)))(((((....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        3,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCAAAAAGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((.....)))(((((.....))))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((.....)))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGAAACCCUUUUU",
+      "target": "(((((((((...))))(((...))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGAAAACCCUUUUU",
+      "target": "(((((((((...))))(((....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGAAAAACCCUUUUU",
+      "target": "(((((((((...))))(((.....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGAAACCCUUUUU",
+      "target": "(((((((((....))))(((...))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGAAAACCCUUUUU",
+      "target": "(((((((((....))))(((....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGAAAAACCCUUUUU",
+      "target": "(((((((((....))))(((.....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGAAACCCUUUUU",
+      "target": "(((((((((.....))))(((...))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGAAAACCCUUUUU",
+      "target": "(((((((((.....))))(((....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGAAAAACCCUUUUU",
+      "target": "(((((((((.....))))(((.....))))))))",
+      "target_energy": -2002,
+      "minimum_energy": -2002,
+      "optimal_count": 1,
+      "best_alternative_energy": -1909,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGAAACCCCUUUUU",
+      "target": "(((((((((...))))((((...)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGAAAACCCCUUUUU",
+      "target": "(((((((((...))))((((....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGAAAAACCCCUUUUU",
+      "target": "(((((((((...))))((((.....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGAAACCCCUUUUU",
+      "target": "(((((((((....))))((((...)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGAAAACCCCUUUUU",
+      "target": "(((((((((....))))((((....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGAAAAACCCCUUUUU",
+      "target": "(((((((((....))))((((.....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGAAACCCCUUUUU",
+      "target": "(((((((((.....))))((((...)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGAAAACCCCUUUUU",
+      "target": "(((((((((.....))))((((....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGAAAAACCCCUUUUU",
+      "target": "(((((((((.....))))((((.....)))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGGAAACCCCCUUUUU",
+      "target": "(((((((((...))))(((((...))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "(((((((((...))))(((((....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "(((((((((...))))(((((.....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((...))))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGGAAACCCCCUUUUU",
+      "target": "(((((((((....))))(((((...))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "(((((((((....))))(((((....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "(((((((((....))))(((((.....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((....))))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGGAAACCCCCUUUUU",
+      "target": "(((((((((.....))))(((((...))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "(((((((((.....))))(((((....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        4,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCAAAAAGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "(((((((((.....))))(((((.....))))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".((((((((.....))))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGAAACCCUUUUU",
+      "target": "((((((((((...)))))(((...))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGAAAACCCUUUUU",
+      "target": "((((((((((...)))))(((....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((((...)))))(((.....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGAAACCCUUUUU",
+      "target": "((((((((((....)))))(((...))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGAAAACCCUUUUU",
+      "target": "((((((((((....)))))(((....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((((....)))))(((.....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGAAACCCUUUUU",
+      "target": "((((((((((.....)))))(((...))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((...)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGAAAACCCUUUUU",
+      "target": "((((((((((.....)))))(((....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        3,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGAAAAACCCUUUUU",
+      "target": "((((((((((.....)))))(((.....))))))))",
+      "target_energy": -2328,
+      "minimum_energy": -2328,
+      "optimal_count": 1,
+      "best_alternative_energy": -2235,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((.....)))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((((...)))))((((...)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((((...)))))((((....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((((...)))))((((.....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((((....)))))((((...)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((((....)))))((((....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((((....)))))((((.....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGAAACCCCUUUUU",
+      "target": "((((((((((.....)))))((((...)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))((((...))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGAAAACCCCUUUUU",
+      "target": "((((((((((.....)))))((((....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))((((....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        4,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGAAAAACCCCUUUUU",
+      "target": "((((((((((.....)))))((((.....)))))))))",
+      "target_energy": -2654,
+      "minimum_energy": -2654,
+      "optimal_count": 1,
+      "best_alternative_energy": -2561,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))((((.....))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        3,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((((...)))))(((((...))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        3,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((((...)))))(((((....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        3,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAGGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((((...)))))(((((.....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((...)))))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        4,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((((....)))))(((((...))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        4,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((((....)))))(((((....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        4,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAGGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((((....)))))(((((.....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((....)))))(((((.....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        5,
+        3
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGGAAACCCCCUUUUU",
+      "target": "((((((((((.....)))))(((((...))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((((...)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        5,
+        4
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGGAAAACCCCCUUUUU",
+      "target": "((((((((((.....)))))(((((....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((((....)))))))))."
+    },
+    {
+      "params": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "construction": "separated_gc",
+      "sequence": "AAAAACCCCCAAAAAGGGGGGGGGGAAAAACCCCCUUUUU",
+      "target": "((((((((((.....)))))(((((.....))))))))))",
+      "target_energy": -2980,
+      "minimum_energy": -2980,
+      "optimal_count": 1,
+      "best_alternative_energy": -2887,
+      "gap": 93,
+      "unique_target": true,
+      "alternative": ".(((((((((.....)))))(((((.....)))))))))."
+    }
+  ],
+  "scope": "Finite parameter cases only; all admissible folds considered by existing exact DP."
+}

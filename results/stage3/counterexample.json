@@ -1,0 +1,94 @@
+{
+  "claim": "Counterexample to the original sequence formula, not undesignability of the target",
+  "params": [
+    3,
+    3,
+    3,
+    4,
+    3
+  ],
+  "sequence": "AAAAAAAAAAUUUCCCAAAGGGUUU",
+  "target": "((((((....)))(((...))))))",
+  "competitor": "(((.(((...)))(((...))))))",
+  "target_pairs_zero_based": [
+    [
+      0,
+      24
+    ],
+    [
+      1,
+      23
+    ],
+    [
+      2,
+      22
+    ],
+    [
+      3,
+      12
+    ],
+    [
+      4,
+      11
+    ],
+    [
+      5,
+      10
+    ],
+    [
+      13,
+      21
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      15,
+      19
+    ]
+  ],
+  "competitor_pairs_zero_based": [
+    [
+      0,
+      24
+    ],
+    [
+      1,
+      23
+    ],
+    [
+      2,
+      22
+    ],
+    [
+      4,
+      12
+    ],
+    [
+      5,
+      11
+    ],
+    [
+      6,
+      10
+    ],
+    [
+      13,
+      21
+    ],
+    [
+      14,
+      20
+    ],
+    [
+      15,
+      19
+    ]
+  ],
+  "target_energy": -1024,
+  "competitor_energy": -1024,
+  "gap": 0,
+  "independent_scorer_agrees": true,
+  "full_enumeration": "exhaustive_checks.json; 68838 folds, 3 optimal"
+}

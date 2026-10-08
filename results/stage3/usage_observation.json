@@ -1,0 +1,14 @@
+{
+  "observed_at": "2026-10-08 19:18:38 UTC",
+  "scope": "Shared Codex account allowance; not task-attributed usage",
+  "initial_remaining_percent": 86,
+  "closeout": {
+    "remaining_percent": 82,
+    "used_percent": 18,
+    "window_duration_minutes": 10080,
+    "resets_at": 1792085037
+  },
+  "stop_threshold_remaining_percent": 70,
+  "stop_reason": "STAGE_3_CANDIDATE_GATE_REACHED_BEFORE_USAGE_THRESHOLD",
+  "threshold_reached": false
+}

@@ -82,3 +82,32 @@ Migration changes are documentation, retained final acceptance evidence and the
 checkpoint packager's publication wording. No experiment reruns, additional
 searches, Stage 3 work, external reviewer contact or Google Drive memory upload
 are authorised by this migration.
+
+## Authorised Stage 3 research, 8 October 2026
+
+Luke subsequently instructed: "Please proceed with Stage 3. Please stop at a
+safe checkpoint when usage remaining reaches 70%." This supersedes the earlier
+Stage 3 stop for the present bounded research task. The retrieved staged plan
+calls for sequential constructive, obstruction and supporting-lemma work, one
+active conjecture, and a stop at the Stage 3 gate. That gate accepts a precise
+candidate theorem with a complete argument, a reproducible counterexample, or
+a useful partial result with all remaining gaps identified.
+
+The explicit local plan gate was satisfied by that instruction. Scope, initial
+bounds, one subsequent predeclared amendment and rollback are retained in
+research/STAGE3_PLAN.md and results/stage3/execution_contract.json. All frozen
+model files, prior experiment sources, Lean files and Stage 2 evidence remain
+byte-identical to fc6612f. New results are separate under results/stage3/.
+
+The initial four-case attempt exposed ties. Its replacement was evaluated on
+a 243-tuple grid and 26 stress tuples. Seven count-first explicit enumerations
+stayed below 200,000 folds per case. These are authorized new Stage 3 checks;
+the old Stage 2 runners were not rerun or expanded. The general construction
+is an informal proof candidate and does not inherit the Stage 2 Lean result.
+
+The usage limit applies to the provider's shared account allowance. Initial
+remaining allowance was 86%; check between batches, reserve checkpoint margin
+by 72%, and start no further research at 70%. Stop sooner at the stage gate.
+No Stage 4 formalisation, remote push, external contact, cloud memory upload,
+usage reset or background continuation is included. The active model/reasoning
+selector is not exposed; the requested Astra Extra High setting is unverified.

@@ -4,10 +4,17 @@ Research into whether every target in a restricted, infinite family of
 three-helix RNA structures can be made the unique minimum-energy fold under a
 fixed stacking-only model.
 
-**Stage 2 is complete. Stage 3 has not started.** The repository contains the
+**Stage 3 has reached a proof-candidate checkpoint; Stage 4 is pending.** See
+the [Stage 3 report](research/STAGE3_REPORT.md) and
+[candidate construction and argument](research/STAGE3_CANDIDATE.md). The proposed
+construction covers the unbounded family with an exact 0.93 kcal/mol gap, and
+269 finite target cases passed. The general claim has not yet received
+independent mathematical review or Lean verification; novelty remains provisional.
+
+Stage 2 is complete. The repository contains the
 Stage 1 problem specification, bounded Python experiments, a kernel-checked
 seven-position Lean pilot, and their verification evidence. The infinite-family
-question remains unresolved, and the literature novelty boundary is provisional.
+question remains unverified under the project's proof standard.
 
 Start with the [research report](REPORT.md), [frozen problem specification](sources/STAGE1_SPEC.md)
 and [execution contract](RUN_CONTRACT.md).
@@ -144,6 +151,8 @@ See [Python reproduction evidence](results/python_reproduction.json) and
 | [results/](results/) | Computational outputs, reviews, build logs and axiom reports |
 | [scripts/](scripts/) | Clean Lean verification and local checkpoint packaging |
 | [REPORT.md](REPORT.md) | Detailed findings, provenance and limitations |
+| [research/](research/) | Stage 3 candidate, failed approach, bounded runners and verification handoff |
+| [results/stage3/](results/stage3/) | Stage 3 finite evidence and checkpoint records |
 
 Evidence records are dated snapshots. The original blocked Lean receipt and
 pre-delivery review are retained alongside the successful build and final
@@ -157,14 +166,18 @@ To create a source snapshot, complete Git bundle and SHA-256 manifest from a
 clean committed checkout:
 
 ```sh
-python3 scripts/package_checkpoint.py
+python3 research/package_stage3.py
 ```
 
 The script verifies a fresh bundle restoration and writes an archive and checksum
 to ignored `checkpoints/`. To restore such an archive, verify its `MANIFEST.json`,
-then run `git clone RNA_Stage_2.bundle recovered-repository`.
+then follow `RESTORE.txt` to clone `RNA_Stage_3.bundle` at the recorded branch.
+The older `scripts/package_checkpoint.py` is retained for the historical
+Stage 2 checkout and must not be used to label a Stage 3 checkpoint.
 
 The GitHub migration was expressly authorised after Stage 2 verification.
-No Stage 3 research, external reviewer contact or Google Drive memory upload
-is included. The pending memory-intake copy remains local. A requested later
-Astra Extra High configuration has not been verified or claimed.
+The later Stage 3 work was authorised on 8 October with a stop at 70% account
+allowance remaining, or the stage gate if reached sooner. This Stage 3 checkpoint
+is local; it has not been pushed to GitHub. No external reviewer was contacted
+or Google Drive memory uploaded. The requested Astra Extra High configuration
+has not been verified or claimed. The frozen Stage 2 evidence is unchanged.

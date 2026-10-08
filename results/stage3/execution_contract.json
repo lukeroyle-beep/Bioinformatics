@@ -1,0 +1,136 @@
+{
+  "classification": {
+    "applicable": true,
+    "confidence": "model_semantic",
+    "mode": "execute",
+    "reason": "semantic_intent"
+  },
+  "dependency_status": {
+    "runtime_root": "/Users/lukesmacminim41/Documents/Codex/Skill-Runtime",
+    "skill_runtime": "available"
+  },
+  "execution_contract": {
+    "acceptance_criteria": [
+      "Retain exact construction or obstruction candidate and known proof obligations",
+      "Retain bounded reproducible experiments, witnesses and independent numerical crosschecks",
+      "Preserve Stage 2 sources and results byte for byte",
+      "Save findings, failed approaches, current usage and next action at a safe checkpoint"
+    ],
+    "affected_systems": [
+      "Local repository research files and documentation"
+    ],
+    "authoritative_context": {
+      "conflicts": [],
+      "fallback_reason": null,
+      "fallback_used": false,
+      "selected": {
+        "authority": "canonical",
+        "available": true,
+        "content_sha256": "00ddb08e306f16a82b750e4659d42a3b9f1bda2fdce10d72300d18d857a9ecaf",
+        "source": "Current user Stage 3 authorization; sources/STAGE1_SPEC.md; verified Stage 2 at fc6612f; Staged Research Plan Page read 2026-10-08",
+        "verified": true,
+        "write_back_allowed": true
+      },
+      "status": "selected",
+      "warnings": [],
+      "write_back_allowed": true
+    },
+    "complexity": "material",
+    "complexity_reason": "repository_or_material_signal",
+    "constraints": [
+      "Frozen model and prior evidence unchanged",
+      "One active conjecture; sequential bounded research",
+      "Stop at safe checkpoint at 70 percent remaining; initial observation 86 percent",
+      "No Stage 4 formalization, remote push, external reviewer contact, cloud memory upload or background work",
+      "Active Astra Extra High setting is not exposed and is not claimed"
+    ],
+    "durable_outcomes_to_assess": [
+      "completed milestone",
+      "material project-state change",
+      "architectural decision",
+      "dependency or known limitation",
+      "validated reusable procedure"
+    ],
+    "expected_outputs": [
+      "work_result",
+      "validation_evidence",
+      "completion_report"
+    ],
+    "non_goals": [
+      "Biological transfer",
+      "Novelty or universal theorem based on finite evidence",
+      "Full Lean formalization"
+    ],
+    "objective": "Investigate Stage 3 under the frozen model, retaining a safe resumable checkpoint at 70 percent account usage remaining or the Stage 3 gate, whichever occurs first.",
+    "plan_gate": {
+      "required": true,
+      "satisfied": true
+    },
+    "recursion": {
+      "active": true,
+      "depth": 0,
+      "prompt_only_is_future_task": false
+    },
+    "repository": {
+      "agents_instructions": null,
+      "architecture_files": [],
+      "branch": "main",
+      "dependency_files": [],
+      "dirty": true,
+      "readme": "README.md",
+      "recent_changes": [
+        "fc6612f (HEAD -> main, origin/main, origin/HEAD) Prepare verified RNA research for Bioinformatics repository",
+        "3a6b467 Complete Stage 2 Lean verification and finite coverage review",
+        "d037996 Record passing finite baseline and blocked Lean pilot",
+        "16e58c9 Freeze Stage 2 model and bounded validation implementations"
+      ],
+      "remotes": [
+        "origin\thttps://github.com/lukeroyle-beep/Bioinformatics.git (fetch)",
+        "origin\thttps://github.com/lukeroyle-beep/Bioinformatics.git (push)"
+      ],
+      "requested": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "resolution_source": "explicit",
+      "root": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "status": "resolved",
+      "status_lines": [
+        "?? results/stage3/"
+      ],
+      "test_paths": [
+        "tests"
+      ]
+    },
+    "required_permissions": {
+      "action_class": "external_reversible",
+      "gate_result": {
+        "action_gate_satisfied": true,
+        "allowed": true,
+        "reasons": [
+          "contract-capability-and-task-authority-satisfied"
+        ],
+        "requested_class": "external_reversible",
+        "skill_maximum_class": "external_reversible"
+      }
+    },
+    "resolved_project": {
+      "confidence": "high",
+      "name": "RNA inverse folding",
+      "source": "explicit",
+      "status": "resolved"
+    },
+    "rollback_considerations": [
+      "Additive Stage 3 files and reviewable documentation changes; base fc6612f remains intact"
+    ],
+    "task_mode": "execute",
+    "test_plan": [
+      "Check target compatibility, exact score and best alternative witnesses",
+      "Use independent explicit enumeration within declared cap",
+      "Focused regression checks for new research utilities",
+      "Verify frozen input hashes and checkpoint manifest"
+    ]
+  },
+  "failures": [],
+  "next_stage": "execute",
+  "ready_for_execution": true,
+  "status": "ready",
+  "warnings": []
+}
