@@ -1,0 +1,11 @@
+{
+  "model_id": "wc-stack-2004-2dp-span3-v1",
+  "source": "https://rna.urmc.rochester.edu/NNDB/parameter_tables/turner_2004_rnastructure/turner_2004_watson_crick_stack.htm",
+  "retrieved_date": "2026-10-08",
+  "temperature_celsius": 37,
+  "units": "0.01 kilocalories per mole",
+  "orientation": "ab/cd = 5prime-ab-3prime over 3prime-cd-5prime; rotation dc/ba",
+  "minimum_enclosed_positions": 3,
+  "ordered_pairs": ["AU", "UA", "CG", "GC"],
+  "stack_central_values": {"AA/UU": -93, "AU/UA": -110, "UA/AU": -133, "CU/GA": -208, "CA/GU": -211, "GU/CA": -224, "GA/CU": -235, "CG/GC": -236, "GG/CC": -326, "GC/CG": -342}
+}
