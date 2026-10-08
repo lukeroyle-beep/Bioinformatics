@@ -1,7 +1,7 @@
 {
   "status": "PASS",
   "model": "wc-stack-2004-2dp-span3-v1",
-  "python": "3.12.14",
+  "python": "3.14.4",
   "sequence_cases": 87893,
   "compatible_folds_scored_twice": 306648,
   "cases_with_tied_optima": 65234,
@@ -128,6 +128,6 @@
       "optimal_count": 1
     }
   ],
-  "seconds": 9.647,
+  "seconds": 4.969,
   "limits": "Finite cross-implementation evidence; no general folder correctness or designability proof."
 }

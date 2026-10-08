@@ -1,0 +1,11 @@
+{
+  "status": "PASS",
+  "input_commit": "d037996e324a1fc0923270f950e5a540ac0a45d6",
+  "input_zip_sha256": "8a53aa5400b2e280fdc289f18345a8f859d5873bfb722d68b25c588eb991835c",
+  "bundle_sha256": "bfc953f14c2e5e68da96bbda5bb2e4a2e5506fab42aa9877daea7401f1e347f2",
+  "all_18_source_hashes_verified": true,
+  "restored_head_matched": true,
+  "complete_bundle_verified": true,
+  "additional_repository_instructions": null,
+  "source": "Supplied checkpoint ZIP and complete local Git bundle; no previous workspace assumed."
+}

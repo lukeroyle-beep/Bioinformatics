@@ -1,14 +1,73 @@
 {
-  "status": "BLOCKED_BEFORE_COMPILATION",
+  "status": "PASS",
   "toolchain": "leanprover/lean4:v4.19.0",
-  "release_url": "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-linux.tar.zst",
-  "download_sha256": "6fe3ce97a58f44e2b3567d455b994eacec5bfe9ae7774f2a573444480ba813fe",
-  "startup_command": "lean --version",
-  "startup_exit_code": 1,
-  "startup_error": "error: failed to locate application",
-  "diagnosis": "The executor exposes /proc/self/exe but the /proc/<getpid()>/exe path is absent. Official Lean v4.19.0 path.cpp uses the latter. This supports an executable-location incompatibility diagnosis; a full runtime trace was unavailable because ptrace is not permitted.",
-  "resolved_setup_issue": "Archive owner restoration errors were resolved by re-extracting with --no-same-owner; startup still failed.",
-  "lean_sysroot_attempt": "Setting LEAN_SYSROOT to the extracted distribution did not resolve startup.",
-  "source_status": "lean/Pilot.lean is an uncompiled draft. No theorem acceptance or axiom report obtained.",
-  "next_step": "Run the pinned project in a compatible Lean environment, repair any elaboration errors, obtain a clean build and inspect every #print axioms result. Do not advance to Stage 3 until this Stage 2 checkpoint is closed."
+  "actual_lean": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+  "actual_lake": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)",
+  "source_sha256": "b8d804c0600e276039c6667820cae44dd83b3e88e3958660971a63d8495c2c01",
+  "theorem_count": 20,
+  "original_draft_compiled_unchanged": true,
+  "original_theorems_preserved": 9,
+  "clean_build_receipt": "results/stage2_verification/lean_build.json",
+  "axiom_output": "results/stage2_verification/lean_axioms.log",
+  "transitive_axiom_union": [
+    "Quot.sound",
+    "propext"
+  ],
+  "foundational_axioms_disclosed": true,
+  "sorry_or_admit": false,
+  "additional_unproved_project_axioms": false,
+  "native_decide_or_unsafe_proof_shortcuts": false,
+  "coverage": {
+    "sequence": "GGAAACC",
+    "positions": 7,
+    "relation_domain_ordered_pairs": 49,
+    "compatible_edges": [
+      [
+        0,
+        5
+      ],
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ],
+      [
+        1,
+        6
+      ]
+    ],
+    "encoded_masks": 16,
+    "admissible_folds": 6,
+    "target_edges": [
+      [
+        0,
+        6
+      ],
+      [
+        1,
+        5
+      ]
+    ],
+    "target_energy_integer_units": -326,
+    "alternative_energy_integer_units": 0,
+    "gap_kcal_per_mol": "3.26",
+    "formal_completeness_bridge": true,
+    "semantic_unique_minimum_theorem": "Stage2.unique_minimum_all_admissible_folds"
+  },
+  "not_proved": [
+    "Full frozen stack table",
+    "Arbitrary sequences or lengths",
+    "Python algorithm correctness",
+    "24-position certificate in Lean",
+    "Infinite-family question",
+    "Literature novelty",
+    "Biological performance"
+  ],
+  "previous_blocker": "Historical Linux executable-location failure; preserved in results/stage2_verification/original_lean_status.json. Compatible macOS environment established, not a Linux executor repair.",
+  "stage3_started": false,
+  "astra_extra_high_verified": false,
+  "next_step": "Stop at Stage 2 checkpoint; any Stage 3 work requires separate authorisation."
 }

@@ -1,0 +1,133 @@
+{
+  "status": "PASS",
+  "model": "wc-stack-2004-2dp-span3-v1",
+  "python": "3.14.4",
+  "sequence_cases": 87893,
+  "compatible_folds_scored_twice": 306648,
+  "cases_with_tied_optima": 65234,
+  "coverage": {
+    "0": {
+      "sequence_cases": 1,
+      "admissible_topologies": 1
+    },
+    "1": {
+      "sequence_cases": 4,
+      "admissible_topologies": 1
+    },
+    "2": {
+      "sequence_cases": 16,
+      "admissible_topologies": 1
+    },
+    "3": {
+      "sequence_cases": 64,
+      "admissible_topologies": 1
+    },
+    "4": {
+      "sequence_cases": 256,
+      "admissible_topologies": 1
+    },
+    "5": {
+      "sequence_cases": 1024,
+      "admissible_topologies": 2
+    },
+    "6": {
+      "sequence_cases": 4096,
+      "admissible_topologies": 4
+    },
+    "7": {
+      "sequence_cases": 16384,
+      "admissible_topologies": 8
+    },
+    "8": {
+      "sequence_cases": 65536,
+      "admissible_topologies": 16
+    },
+    "9": {
+      "sequence_cases": 128,
+      "admissible_topologies": 32
+    },
+    "10": {
+      "sequence_cases": 128,
+      "admissible_topologies": 65
+    },
+    "11": {
+      "sequence_cases": 128,
+      "admissible_topologies": 133
+    },
+    "12": {
+      "sequence_cases": 128,
+      "admissible_topologies": 274
+    }
+  },
+  "results_sha256": "d10732f2a5689293eed515e8984b6cbd074399f61f951faf9fd5a8d67a7a864a",
+  "parameter_orientations_checked": 16,
+  "seed_figure_1_topology_count_n12_span0": 15511,
+  "base_pair_theorem_instances": [
+    {
+      "sequence": "GGGAAACCC",
+      "target": "(((...)))",
+      "span": 0,
+      "wobble": true,
+      "maximum_pairs": 3,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGAAACCC",
+      "target": "(((...)))",
+      "span": 3,
+      "wobble": false,
+      "maximum_pairs": 3,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGAAAACCC",
+      "target": "(((....)))",
+      "span": 0,
+      "wobble": true,
+      "maximum_pairs": 3,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGAAAACCC",
+      "target": "(((....)))",
+      "span": 3,
+      "wobble": false,
+      "maximum_pairs": 3,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGGAAACCCC",
+      "target": "((((...))))",
+      "span": 0,
+      "wobble": true,
+      "maximum_pairs": 4,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGGAAACCCC",
+      "target": "((((...))))",
+      "span": 3,
+      "wobble": false,
+      "maximum_pairs": 4,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGGAAAACCCC",
+      "target": "((((....))))",
+      "span": 0,
+      "wobble": true,
+      "maximum_pairs": 4,
+      "optimal_count": 1
+    },
+    {
+      "sequence": "GGGGAAAACCCC",
+      "target": "((((....))))",
+      "span": 3,
+      "wobble": false,
+      "maximum_pairs": 4,
+      "optimal_count": 1
+    }
+  ],
+  "seconds": 4.969,
+  "limits": "Finite cross-implementation evidence; no general folder correctness or designability proof."
+}

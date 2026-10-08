@@ -1,0 +1,100 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-08T05:10:11.675406+00:00",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "python": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+  "lean_executable": "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lean",
+  "lake_executable": "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+  "pin": "leanprover/lean4:v4.19.0",
+  "source_sha256": "eb1433fbf5e2b1a4709193007db2717ba4cc93967aa8a2922f6d2da44e8ee5ac",
+  "commands": [
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lean",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean",
+      "exit_code": 0,
+      "log": "lean_version.log",
+      "sha256": "adae83ba7663543abb21a1527013239eb469a7dbff15bea8c52d90901b42cc65"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean",
+      "exit_code": 0,
+      "log": "lake_version.log",
+      "sha256": "dc1f8f58960933047871f7df82c5de73ea0f705617e101b7dd9413a418a2195d"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "clean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean",
+      "exit_code": 0,
+      "log": "lean_clean.log",
+      "sha256": "30490b76762d2a094ce097c5f9d4f1b49261c1dc49998a5b3b43df1a6cb79adb"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "build"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean",
+      "exit_code": 0,
+      "log": "lean_build.log",
+      "sha256": "652bb971b32a2d8f48f2f04b0596439fe8cbc96729d00dd7558b77feb23fef86"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Pilot.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean",
+      "exit_code": 0,
+      "log": "lean_axioms.log",
+      "sha256": "fcc2f6560e6d1385f988e08b0db99d2c97a56b209553aa95e45afa6fbe21f450"
+    }
+  ],
+  "theorem_axioms": {
+    "admissible_edges_complete": [
+      "propext",
+      "Quot.sound"
+    ],
+    "target_pairs": [
+      "propext"
+    ],
+    "target_legal": [
+      "propext"
+    ],
+    "target_energy": [
+      "propext"
+    ],
+    "empty_energy": [
+      "propext"
+    ],
+    "isolated_pair_energy": [
+      "propext"
+    ],
+    "crossing_rejected": [
+      "propext"
+    ],
+    "reused_endpoint_rejected": [
+      "propext"
+    ],
+    "unique_minimum_in_finite_encoding": [
+      "propext"
+    ]
+  },
+  "transitive_axiom_union": [
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-10-08T05:10:13.260783+00:00"
+}

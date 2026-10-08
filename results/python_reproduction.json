@@ -1,0 +1,106 @@
+{
+  "status": "PASS",
+  "scope": "Stage 2; exactly one execution of each existing unchanged Python runner; no search expansion",
+  "environment": {
+    "python_version": "3.14.4",
+    "python_full_version": "3.14.4 (main, Apr  7 2026, 13:13:20) [Clang 21.0.0 (clang-2100.0.123.102)]",
+    "python_executable": "/opt/homebrew/opt/python@3.14/bin/python3.14",
+    "python_realpath": "/opt/homebrew/Cellar/python@3.14/3.14.4/Frameworks/Python.framework/Versions/3.14/bin/python3.14",
+    "implementation": "CPython",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "machine": "arm64",
+    "mac_ver": "26.6.2"
+  },
+  "unchanged_source_checks": {
+    "parameters.json": {
+      "sha256": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d",
+      "original_sha256": "5e43000968b14c8699b3a9cbe71b38cefd869f065fecd5c94dd7c84409695c4d",
+      "matches_original": true
+    },
+    "src/model.py": {
+      "sha256": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+      "original_sha256": "9a3520e16b3992e253df5add4b73f198ad659e6acac20fa803ba729c77c0332d",
+      "matches_original": true
+    },
+    "src/exhaustive.py": {
+      "sha256": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+      "original_sha256": "fd4b8125108de2f44ccb086c72121c91cf5ccc9f53527f1d8326aeb23f99016d",
+      "matches_original": true
+    },
+    "src/folding.py": {
+      "sha256": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+      "original_sha256": "a61a5b1276342ae4d3cbf66e3dfc24576522dd503ae263ad0d325472fb240f88",
+      "matches_original": true
+    },
+    "tests/validate.py": {
+      "sha256": "8a88a961f01af8ff67a1faf480496bed465df44b7994d1320f42a7bacf5b5775",
+      "original_sha256": "8a88a961f01af8ff67a1faf480496bed465df44b7994d1320f42a7bacf5b5775",
+      "matches_original": true
+    },
+    "tests/junction_pilot.py": {
+      "sha256": "ef05936cae48a1d8a67c397ab8ab07b2fe29c5148fb43c01355db7452f1a9479",
+      "original_sha256": "ef05936cae48a1d8a67c397ab8ab07b2fe29c5148fb43c01355db7452f1a9479",
+      "matches_original": true
+    }
+  },
+  "runs": [
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "tests/validate.py"
+      ],
+      "execution_count": 1,
+      "started_utc": "2026-10-08T05:08:20.387594+00:00",
+      "ended_utc": "2026-10-08T05:08:25.385050+00:00",
+      "elapsed_seconds": 4.997019,
+      "exit_code": 0,
+      "stdout": "results/python_validation.stdout.log",
+      "stderr": "results/python_validation.stderr.log",
+      "stdout_sha256": "574c5059e01dceba71c2def94e2170424acac13315370271ff4b3272ea17d594",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_file": "results/validation.json",
+      "result_sha256": "574c5059e01dceba71c2def94e2170424acac13315370271ff4b3272ea17d594",
+      "original_result_sha256": "a451eaad70aaa49385edd0fcae6ba22cacfbd53aaecb2abe91d3d2255241c39a",
+      "exact_json_match": false,
+      "observed_differences": [
+        {
+          "field": "python",
+          "original": "3.12.14",
+          "reproduced": "3.14.4"
+        },
+        {
+          "field": "seconds",
+          "original": 9.647,
+          "reproduced": 4.969
+        }
+      ],
+      "computational_fields_match": true,
+      "computational_discrepancies": [],
+      "metadata_comparison_note": "Runtime may vary. The Python version is recorded as actual environment metadata; all other JSON fields must match."
+    },
+    {
+      "command": [
+        "/opt/homebrew/opt/python@3.14/bin/python3.14",
+        "tests/junction_pilot.py"
+      ],
+      "execution_count": 1,
+      "started_utc": "2026-10-08T05:08:25.385344+00:00",
+      "ended_utc": "2026-10-08T05:08:25.990824+00:00",
+      "elapsed_seconds": 0.604583,
+      "exit_code": 0,
+      "stdout": "results/python_junction_pilot.stdout.log",
+      "stderr": "results/python_junction_pilot.stderr.log",
+      "stdout_sha256": "bd9616a6c1c5d628e24169e862634cec604d42e66dc60b0b06a67e7960cc42ae",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "result_file": "results/junction_pilot.json",
+      "result_sha256": "3d8421ba6107eb476e243a1290d248585f3d5f1a577c4e053435432e35af3bc1",
+      "original_result_sha256": "3d8421ba6107eb476e243a1290d248585f3d5f1a577c4e053435432e35af3bc1",
+      "exact_json_match": true,
+      "observed_differences": [],
+      "computational_fields_match": true,
+      "computational_discrepancies": [],
+      "metadata_comparison_note": "All JSON fields must match."
+    }
+  ],
+  "source_hashes_unchanged_after_execution": true
+}

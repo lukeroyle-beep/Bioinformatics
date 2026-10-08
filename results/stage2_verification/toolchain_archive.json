@@ -1,0 +1,22 @@
+{
+  "release_url": "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-darwin_aarch64.tar.zst",
+  "archive_bytes": 329275227,
+  "archive_sha256": "94d4246fd90a152a4819419498d3e45c941a31638a57a0a8e32561494ab6cea7",
+  "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+  "machine": "arm64",
+  "provenance": "Official GitHub v4.19.0 release downloaded over HTTPS; release metadata supplies size but no separate digest. SHA256 is locally measured.",
+  "executables": {
+    "bin/lean": {
+      "sha256": "5c1fe58db7d10b1cd0ddff1a1cbc49db2396fff9c6c983cc3b49f1c5c1ae241b",
+      "bytes": 49968
+    },
+    "bin/lake": {
+      "sha256": "8b4ff4094a842500f9987336926c5fb2e20b4df8cd92d4e6ba70052a9c246574",
+      "bytes": 51184
+    }
+  },
+  "lean_version": "Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)",
+  "lake_version": "Lake version 5.0.0-6caaee8 (Lean version 4.19.0)",
+  "installation_path": "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64",
+  "installation_scope": "Project-local ignored .tools directory; no global toolchain changed."
+}

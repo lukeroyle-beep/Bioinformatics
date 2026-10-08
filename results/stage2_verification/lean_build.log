@@ -1,0 +1,22 @@
+ℹ [2/3] Built Pilot
+info: ././././Pilot.lean:185:0: 'Stage2.admissible_edges_complete' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:186:0: 'Stage2.compatible_stack_bases' does not depend on any axioms
+info: ././././Pilot.lean:187:0: 'Stage2.target_pairs' depends on axioms: [propext]
+info: ././././Pilot.lean:188:0: 'Stage2.target_legal' depends on axioms: [propext]
+info: ././././Pilot.lean:189:0: 'Stage2.target_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:190:0: 'Stage2.empty_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:191:0: 'Stage2.isolated_pair_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:192:0: 'Stage2.crossing_rejected' depends on axioms: [propext]
+info: ././././Pilot.lean:193:0: 'Stage2.reused_endpoint_rejected' depends on axioms: [propext]
+info: ././././Pilot.lean:194:0: 'Stage2.unique_minimum_in_finite_encoding' depends on axioms: [propext]
+info: ././././Pilot.lean:195:0: 'Stage2.legal_masks_exact' depends on axioms: [propext]
+info: ././././Pilot.lean:196:0: 'Stage2.canonical_forbidden' does not depend on any axioms
+info: ././././Pilot.lean:197:0: 'Stage2.compatible_canonical' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:198:0: 'Stage2.canonical_pairs' does not depend on any axioms
+info: ././././Pilot.lean:199:0: 'Stage2.canonical_realizes' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:200:0: 'Stage2.all_compatible_folds_encoded' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:201:0: 'Stage2.all_admissible_folds_encoded' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:202:0: 'Stage2.targetFold_admissible' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:203:0: 'Stage2.targetFold_score' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:204:0: 'Stage2.unique_minimum_all_admissible_folds' depends on axioms: [propext, Quot.sound]
+Build completed successfully.

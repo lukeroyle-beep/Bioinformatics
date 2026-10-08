@@ -1,6 +1,6 @@
 # Stage 2: finite baseline and verification checkpoint
 
-8 October 2026. **Computational baseline passed; Stage 2 remains open because the Lean pilot could not be compiled. Stage 3 has not begun.** Stage 1 remains complete as a bounded scoping exercise. The model is explicit; novelty of the infinite-family question remains provisional.
+8 October 2026. **Stage 2 verification passed: the Python baseline was reproduced and the seven-position Lean pilot has a clean kernel-checked build with a formal completeness bridge. Stage 3 has not begun.** Stage 1 remains complete as a bounded scoping exercise. The model is explicit; novelty of the infinite-family question remains provisional.
 
 ## Frozen question and model
 
@@ -27,7 +27,7 @@ The interval dynamic-programming implementation retains the two lowest distinct 
 
 The sample seed is 20261008. Empty structures, isolated-pair ties, minimum-span rejection, excluded wobble and crossing rejection were included. The base-pair examples are G^s A^h C^s for s and h each in {3,4}; each specified hairpin uniquely maximises pair count. Checks cover the seed's zero-span setting with wobble allowed and the new span-three Watson–Crick setting. These are elementary instances consistent with the seed's design results, not reproduction of its full construction algorithm, sampler or empirical dataset.
 
-The deterministic validation digest is d10732f2a5689293eed515e8984b6cbd074399f61f951faf9fd5a8d67a7a864a. The run used Python 3.12.14 and its standard library. Search and validation bounds were fixed before computation; the later checker repair is recorded in RUN_CONTRACT.md.
+The deterministic validation digest is d10732f2a5689293eed515e8984b6cbd074399f61f951faf9fd5a8d67a7a864a. The original run used Python 3.12.14 and its standard library. Search and validation bounds were fixed before computation; the later checker repair is recorded in RUN_CONTRACT.md.
 
 ## Bounded three-helix pilot
 
@@ -53,23 +53,101 @@ Energies and gaps in this table are kcal/mol. Gap means the best alternative's e
 
 The initial enumeration checker hit its declared 200,000-fold limit on the first beaten example. The repaired checker counts folds before materialising them, logs the two over-limit representatives (277,398 and 219,736 folds), and uses the first representative in that outcome class fitting the unchanged cap. This was an execution-limit repair, not a numerical discrepancy or a change in candidate selection. The 256-candidate screen was unchanged.
 
-## Lean pilot: blocked and unverified
+## Lean pilot: verified seven-position instance
 
-A dependency-free seven-position draft is supplied in lean/Pilot.lean, pinned to Lean 4.19.0. It encodes the sequence G G A A A C C, enumerates subsets of its four admissible edges, rejects endpoint reuse and crossings, and states a unique-minimum result for the nested two-pair fold with energy -3.26 kcal/mol. It also includes finite admissible-edge coverage, empty/isolated-pair checks, and axiom-print commands.
+The official Lean 4.19.0 macOS ARM64 release works in this environment. The actual
+compiler reports `Lean (version 4.19.0, arm64-apple-darwin23.6.0, commit 6caaee842e94, Release)`;
+Lake reports `5.0.0-6caaee8 (Lean version 4.19.0)`. There are no external Lean
+packages. The locally measured release archive SHA-256 is
+`94d4246fd90a152a4819419498d3e45c941a31638a57a0a8e32561494ab6cea7`.
+The release metadata supplied no independent digest; this hash identifies the
+actual downloaded bytes. See `results/stage2_verification/toolchain_archive.json`
+for URL, size, binary hashes and platform.
 
-**This draft has not been compiled. Its declarations are intended checks, not accepted theorems.** It does not formalise the Python interval algorithm, the 24-position certificate, the full parameter table, general enumeration completeness or Q1.
+The original nine declarations compiled unchanged; no repair to their mathematical
+statements or proofs was needed. The previous executable-location failure was
+specific to the prior Linux executor. Its exact blocked receipt is retained at
+`results/stage2_verification/original_lean_status.json`, and the first successful
+build of the original source is retained in `results/stage2_verification/initial_build/`.
+This run establishes a working environment, not a repaired Linux executor.
 
-The official Linux release downloaded successfully. Archive ownership restoration failed initially and was resolved by extraction with --no-same-owner. Lean then exited with code 1 even for `lean --version`: `error: failed to locate application`. Setting LEAN_SYSROOT did not fix it. The executor exposes /proc/self/exe but the numeric process-ID executable path is absent. The official v4.19.0 path source uses that numeric path, supporting an executable-location incompatibility diagnosis. A full trace was unavailable because tracing is not permitted. No system permissions or access controls were changed.
+The accepted source now has **20 kernel-checked theorem declarations**. The added
+coverage bridge is confined to the fixed sequence `GGAAACC`:
 
-The downloaded archive's SHA256 is 6fe3ce97a58f44e2b3567d455b994eacec5bfe9ae7774f2a573444480ba813fe. No acceptance or transitive axiom report was obtained. The related public base-pair formalisation was not rebuilt and no code was imported; its results are not a dependency.
+- `Fold` is any Boolean relation on all 49 ordered pairs of seven positions.
+  Admissibility requires left-to-right orientation, at least three enclosed
+  positions, Watson–Crick compatibility, no reused endpoint and no crossing.
+  It imposes no target topology or pair-count restriction.
+- The only possible compatible edges, in zero-based indexing, are `(0,5)`,
+  `(0,6)`, `(1,5)` and `(1,6)`. `all_compatible_folds_encoded` proves every
+  compatible relation equals an encoded mask and preserves its complete edge list.
+  `all_admissible_folds_encoded` also preserves legality and stack energy.
+- `legal_masks_exact` classifies the six legal masks: the empty fold, four
+  isolated-pair folds and the nested target `{(0,6),(1,5)}`. All five alternatives
+  have zero stack energy. The target has one GG/CC stack, energy -326 integer
+  units (-3.26 kcal/mol), and is uniquely minimal. `compatible_stack_bases`
+  verifies that GG/CC is the only stack orientation possible in this example.
+- `unique_minimum_all_admissible_folds` compares the semantic target energy with
+  **every distinct admissible fold of this seven-position sequence**, using the
+  proved encoding bridge. The earlier theorem over 16 masks is preserved.
 
-## Gate, confidence and next action
+The transitive axiom union over **all 20 theorems** is exactly **`propext` and
+`Quot.sound`**, standard Lean foundational axioms for propositional extensionality
+and quotient soundness. The final semantic unique-minimum theorem depends on both.
+No theorem depends on `Classical.choice`, `sorryAx`, or a project-specific axiom.
+There is no `sorry`, `admit`, added unproved project axiom, `native_decide` or unsafe
+proof shortcut. Finite facts use ordinary `decide`; the kernel checks their proof
+terms. This is not an axiom-free proof claim.
 
-Confidence is high that the independently implemented finite checks agree as reported. This is substantial finite evidence for the evaluator, not a proof of its general correctness, a theorem for the target family, or external mathematical review.
+The final `lake clean`, `lake build` and explicit `lake env lean Pilot.lean`
+all exited 0. Full output, every theorem's transitive dependencies, actual commands,
+exit codes and the exact source hash are retained in
+`results/stage2_verification/lean_build.json`, `lean_clean.log`, `lean_build.log`
+and `lean_axioms.log`. `results/lean_model_review.md` explains the semantic
+review and limits. Internal agent review is not external mathematical review.
 
-The Python portion of the Stage 2 gate is satisfied. Keep Stage 2 open until the Lean draft is checked in a compatible installation, any elaboration issues are resolved, a clean build is recorded, and its model and axiom output are reviewed. The next bounded task is that build and review, not a larger sequence search. Stop afterwards for the Stage 2 decision; Stage 3 is not authorised by this checkpoint.
+This formalisation does **not** cover the full stack table, arbitrary sequences or
+lengths, correctness of the Python interval algorithm, the 24-position certificate,
+or Q1. The seven-position sequence is not itself a member of the research target
+family. Its purpose is finite model-fidelity and proof-toolchain verification.
 
-A local Git repository preserves the code, frozen inputs, run contract and results. The archive includes a source snapshot and Git bundle; no remote repository was created. Use a compatible local Codex repository for the outstanding Lean execution and this project Space for review. The active model selector and quota telemetry were unavailable; Astra Extra High and a measured usage percentage are not claimed.
+## Reproduction in the continuation environment
+
+Both unchanged Python runners were run exactly once with CPython 3.14.4 on
+macOS 26.6.2 ARM64. Both exited 0 with empty stderr. Their model, implementation,
+parameter and runner files remained byte-identical to the supplied commit.
+The validation JSON changed only in Python version and measured runtime;
+all computational fields and the digest matched. The junction JSON was byte-for-byte
+identical, including the unchanged cap and two logged over-cap representatives.
+`results/python_reproduction.json` records full commands, output hashes and exact
+comparisons; `results/python_model_review.md` records the independent source review.
+The figures above are therefore reproduced finite results, without search expansion.
+
+## Gate, confidence and checkpoint boundary
+
+The Stage 2 technical gate passes: the fixed Python evidence was reproduced,
+the original Lean statements and added seven-position coverage bridge compile,
+the final build is clean, and model fidelity and transitive axioms were reviewed.
+The updated local checkpoint packages the reviewed commit, complete Git history,
+source snapshot, retained evidence and SHA-256 manifest. Its packaging command
+verifies a fresh bundle restoration against every committed file; the outer manifest
+identifies the delivered commit. Build and restoration instructions are in README.md.
+
+Confidence is high in the reported finite evidence and the stated seven-position
+Lean theorem. The general correctness of the Python algorithm and the infinite-family
+question remain unproved. The Stage 1 literature boundary remains provisional;
+this continuation found no concrete Stage 1 defect and did not repeat that search.
+
+**Stop at this Stage 2 checkpoint. Stage 3 has not begun and is not authorised.**
+A later research decision requires separate authorisation; no infinite-family
+result or novelty conclusion follows from this checkpoint. One later question is
+whether a construction or obstruction can cover the unbounded target family under
+the unchanged model; no work on that question was started here.
+
+No remote repository was published, external reviewers contacted or pending Google
+Drive memory copy uploaded. The memory-intake copy remains local and pending.
+The active model/reasoning configuration was not verified; Astra Extra High and a
+measured usage percentage are not claimed.
 
 ## Sources and interpretation boundary
 

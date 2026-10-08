@@ -1,0 +1,20 @@
+'Stage2.admissible_edges_complete' depends on axioms: [propext, Quot.sound]
+'Stage2.compatible_stack_bases' does not depend on any axioms
+'Stage2.target_pairs' depends on axioms: [propext]
+'Stage2.target_legal' depends on axioms: [propext]
+'Stage2.target_energy' depends on axioms: [propext]
+'Stage2.empty_energy' depends on axioms: [propext]
+'Stage2.isolated_pair_energy' depends on axioms: [propext]
+'Stage2.crossing_rejected' depends on axioms: [propext]
+'Stage2.reused_endpoint_rejected' depends on axioms: [propext]
+'Stage2.unique_minimum_in_finite_encoding' depends on axioms: [propext]
+'Stage2.legal_masks_exact' depends on axioms: [propext]
+'Stage2.canonical_forbidden' does not depend on any axioms
+'Stage2.compatible_canonical' depends on axioms: [propext, Quot.sound]
+'Stage2.canonical_pairs' does not depend on any axioms
+'Stage2.canonical_realizes' depends on axioms: [propext, Quot.sound]
+'Stage2.all_compatible_folds_encoded' depends on axioms: [propext, Quot.sound]
+'Stage2.all_admissible_folds_encoded' depends on axioms: [propext, Quot.sound]
+'Stage2.targetFold_admissible' depends on axioms: [propext, Quot.sound]
+'Stage2.targetFold_score' depends on axioms: [propext, Quot.sound]
+'Stage2.unique_minimum_all_admissible_folds' depends on axioms: [propext, Quot.sound]

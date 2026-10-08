@@ -1,0 +1,11 @@
+ℹ [2/3] Built Pilot
+info: ././././Pilot.lean:65:0: 'Stage2.admissible_edges_complete' depends on axioms: [propext, Quot.sound]
+info: ././././Pilot.lean:66:0: 'Stage2.target_pairs' depends on axioms: [propext]
+info: ././././Pilot.lean:67:0: 'Stage2.target_legal' depends on axioms: [propext]
+info: ././././Pilot.lean:68:0: 'Stage2.target_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:69:0: 'Stage2.empty_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:70:0: 'Stage2.isolated_pair_energy' depends on axioms: [propext]
+info: ././././Pilot.lean:71:0: 'Stage2.crossing_rejected' depends on axioms: [propext]
+info: ././././Pilot.lean:72:0: 'Stage2.reused_endpoint_rejected' depends on axioms: [propext]
+info: ././././Pilot.lean:73:0: 'Stage2.unique_minimum_in_finite_encoding' depends on axioms: [propext]
+Build completed successfully.

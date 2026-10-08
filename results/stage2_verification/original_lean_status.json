@@ -1,0 +1,14 @@
+{
+  "status": "BLOCKED_BEFORE_COMPILATION",
+  "toolchain": "leanprover/lean4:v4.19.0",
+  "release_url": "https://github.com/leanprover/lean4/releases/download/v4.19.0/lean-4.19.0-linux.tar.zst",
+  "download_sha256": "6fe3ce97a58f44e2b3567d455b994eacec5bfe9ae7774f2a573444480ba813fe",
+  "startup_command": "lean --version",
+  "startup_exit_code": 1,
+  "startup_error": "error: failed to locate application",
+  "diagnosis": "The executor exposes /proc/self/exe but the /proc/<getpid()>/exe path is absent. Official Lean v4.19.0 path.cpp uses the latter. This supports an executable-location incompatibility diagnosis; a full runtime trace was unavailable because ptrace is not permitted.",
+  "resolved_setup_issue": "Archive owner restoration errors were resolved by re-extracting with --no-same-owner; startup still failed.",
+  "lean_sysroot_attempt": "Setting LEAN_SYSROOT to the extracted distribution did not resolve startup.",
+  "source_status": "lean/Pilot.lean is an uncompiled draft. No theorem acceptance or axiom report obtained.",
+  "next_step": "Run the pinned project in a compatible Lean environment, repair any elaboration errors, obtain a clean build and inspect every #print axioms result. Do not advance to Stage 3 until this Stage 2 checkpoint is closed."
+}

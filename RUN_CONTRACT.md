@@ -35,3 +35,34 @@ The active model selector and reasoning setting are not exposed in this executor
 No claim is made that Astra Extra High was selected. Mathematical research remains
 reserved for the later stage; this run develops and checks the finite baseline.
 No external expert review, remote repository publication or background task.
+
+## Authorised Stage 2 verification continuation, 8 October 2026
+
+Luke explicitly authorised restoring the supplied bundle at
+`d037996e324a1fc0923270f950e5a540ac0a45d6`, establishing Lean 4.19.0, compiling and
+repairing the draft while preserving its intended statement, reviewing model
+fidelity and finite coverage, retaining a clean build and transitive axiom
+report, reproducing both existing Python runners once, and committing an updated
+local checkpoint. Begin directly and stop at the Stage 2 checkpoint.
+
+The original nine Lean statements compiled unchanged. Added work closes only
+the seven-position fold-to-mask coverage boundary: arbitrary relations on the
+seven positions, admissibility, encoding completeness, specialized stack value,
+and the lifted unique minimum. The frozen model, all Python sources, runner
+bounds and seeds, parameters.json, and Stage 1 specification remain unchanged.
+No full parameter-table formalisation, general folder proof or family theorem
+is added. Every project theorem must be kernel checked with a disclosed
+transitive axiom set; no placeholders, added unproved project axioms or native
+computation proof shortcuts are accepted.
+
+Python runners were each executed exactly once in this continuation. Their
+result comparison and actual CPython 3.14.4 environment are retained separately.
+Only build/proof repair and artifact validation may be repeated as necessary.
+The official Lean 4.19.0 macOS ARM64 distribution is installed locally under
+ignored .tools; the original Linux startup failure remains historical evidence.
+
+Internal agent review supports this checkpoint; it is not external mathematical
+review. No remote repository publication, external reviewer contact, pending
+Google Drive memory upload or background task is authorised. No recovery codes
+are needed, read or used. The requested later Astra Extra High setting is not
+verified here and is not claimed. Stage 3 remains unauthorised.

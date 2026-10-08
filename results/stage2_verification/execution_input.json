@@ -1,0 +1,67 @@
+{
+  "objective": "Complete outstanding Stage 2 verification and stop before Stage 3.",
+  "semantic_intent": "execute",
+  "project": "RNA inverse folding",
+  "repository": "/Users/lukesmacminim41/RNA Inverse Folding",
+  "context_candidates": [
+    {
+      "source": "user-supplied checkpoint at d037996e324a1fc0923270f950e5a540ac0a45d6 with all 18 source hashes verified",
+      "authority": "canonical",
+      "available": true,
+      "verified": true,
+      "write_back_allowed": true,
+      "content_sha256": "26e1074e686575b4f3e2075af691e584fd5eb4b451e8eae8674282dbcd3dfd24"
+    }
+  ],
+  "acceptance_criteria": [
+    "Actual official Lean 4.19.0 toolchain recorded",
+    "Intended seven-position theorem kernel checked; model and finite coverage reviewed",
+    "No sorry, admit, project axioms or native_decide; all transitive axioms disclosed",
+    "Clean build passes with retained output",
+    "Both unchanged Python runners executed exactly once; numerical results match",
+    "Reviewed changes committed and portable checkpoint verified; Stage 3 not started"
+  ],
+  "constraints": [
+    "Frozen model unchanged",
+    "No expansion of Python search",
+    "No remote repository publication, external reviewer contact or Drive upload",
+    "Recovery codes neither read nor used",
+    "No unverified model or reasoning configuration claim"
+  ],
+  "non_goals": [
+    "Stage 3",
+    "General algorithm correctness",
+    "Infinite-family question",
+    "Novelty conclusion"
+  ],
+  "outputs": [
+    "Lean proof and coverage review",
+    "Build and axiom logs",
+    "Python reproduction evidence",
+    "Updated report and local Git bundle checkpoint"
+  ],
+  "affected_systems": [
+    "Local repository and local Lean compiler only"
+  ],
+  "test_plan": [
+    "Official lean --version and lake --version",
+    "Initial compile; bounded elaboration repairs",
+    "Independent finite-model review",
+    "lake clean then lake build with full output",
+    "Exactly one run of each supplied Python runner",
+    "Checkpoint bundle, manifest and source verification"
+  ],
+  "rollback": [
+    "Restore original complete bundle at saved commit; retain original status evidence"
+  ],
+  "plan_confirmed": true,
+  "execution_authority": {
+    "task_authorized": true,
+    "action_gate": {
+      "authorized": true,
+      "action_class": "external_reversible",
+      "scope": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "source": "Current user explicitly requests begin directly, compile/repair, reproduce, commit, update checkpoint"
+    }
+  }
+}
