@@ -1,0 +1,135 @@
+{
+  "classification": {
+    "applicable": true,
+    "confidence": "model_semantic",
+    "mode": "execute",
+    "reason": "semantic_intent"
+  },
+  "dependency_status": {
+    "runtime_root": "/Users/lukesmacminim41/Documents/Codex/Skill-Runtime",
+    "skill_runtime": "available"
+  },
+  "execution_contract": {
+    "acceptance_criteria": [
+      "Independent review of candidate Lemmas 1-4 retained",
+      "Unbounded model and full frozen table faithfully represented",
+      "Unconditional unique minimum and exact gap theorem kernel checked against every admissible fold",
+      "Clean pinned build, full transitive axiom audit and independent fidelity review retained",
+      "Literature boundary reconciled without unsupported novelty claim",
+      "Frozen prior evidence preserved and safe usage checkpoint retained"
+    ],
+    "affected_systems": [
+      "Local repository research files and documentation"
+    ],
+    "authoritative_context": {
+      "conflicts": [],
+      "fallback_reason": null,
+      "fallback_used": false,
+      "selected": {
+        "authority": "canonical",
+        "available": true,
+        "source": "Current user Stage 4 authorization; frozen sources/STAGE1_SPEC.md; Stage 3 candidate and report at 827ba64; clean repository inspected 2026-10-08",
+        "verified": true,
+        "write_back_allowed": true
+      },
+      "status": "selected",
+      "warnings": [],
+      "write_back_allowed": true
+    },
+    "complexity": "material",
+    "complexity_reason": "repository_or_material_signal",
+    "constraints": [
+      "Preserve frozen model, prior Python sources, Lean pilot, and Stage 2/3 evidence",
+      "Monitor shared weekly usage; initial remaining 80 percent; reserve closeout margin at 72 percent; stop substantive work at 70 percent",
+      "No remote push, external contact, cloud write, usage reset, background continuation, or novelty claim",
+      "No proof placeholders, extra project axioms, native computation shortcuts, or conditional results presented as unconditional"
+    ],
+    "durable_outcomes_to_assess": [
+      "completed milestone",
+      "material project-state change",
+      "architectural decision",
+      "dependency or known limitation",
+      "validated reusable procedure"
+    ],
+    "expected_outputs": [
+      "work_result",
+      "validation_evidence",
+      "completion_report"
+    ],
+    "non_goals": [
+      "Biological transfer",
+      "New experiment searches",
+      "Publication or external specialist review without authorization"
+    ],
+    "objective": "Execute Stage 4 independent review and Lean verification of the three-helix construction, pausing at a safe checkpoint when weekly usage remaining reaches 70 percent.",
+    "plan_gate": {
+      "required": true,
+      "satisfied": true
+    },
+    "recursion": {
+      "active": true,
+      "depth": 0,
+      "prompt_only_is_future_task": false
+    },
+    "repository": {
+      "agents_instructions": null,
+      "architecture_files": [],
+      "branch": "codex/stage3-construction",
+      "dependency_files": [],
+      "dirty": false,
+      "readme": "README.md",
+      "recent_changes": [
+        "827ba64 (HEAD -> codex/stage3-construction) Record Stage 3 construction candidate and bounded evidence",
+        "fc6612f (origin/main, origin/HEAD, main) Prepare verified RNA research for Bioinformatics repository",
+        "3a6b467 Complete Stage 2 Lean verification and finite coverage review",
+        "d037996 Record passing finite baseline and blocked Lean pilot",
+        "16e58c9 Freeze Stage 2 model and bounded validation implementations"
+      ],
+      "remotes": [
+        "origin\thttps://github.com/lukeroyle-beep/Bioinformatics.git (fetch)",
+        "origin\thttps://github.com/lukeroyle-beep/Bioinformatics.git (push)"
+      ],
+      "requested": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "resolution_source": "explicit",
+      "root": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "status": "resolved",
+      "status_lines": [],
+      "test_paths": [
+        "tests"
+      ]
+    },
+    "required_permissions": {
+      "action_class": "external_reversible",
+      "gate_result": {
+        "action_gate_satisfied": true,
+        "allowed": true,
+        "reasons": [
+          "contract-capability-and-task-authority-satisfied"
+        ],
+        "requested_class": "external_reversible",
+        "skill_maximum_class": "external_reversible"
+      }
+    },
+    "resolved_project": {
+      "confidence": "high",
+      "name": "RNA inverse folding",
+      "source": "explicit",
+      "status": "resolved"
+    },
+    "rollback_considerations": [
+      "Additive Stage 4 directory and docs; base commit 827ba64 preserved"
+    ],
+    "task_mode": "execute",
+    "test_plan": [
+      "Compile each new Lean module with pinned 4.19.0",
+      "Clean build and transitive axiom report for every new theorem",
+      "Independent source fidelity and proof-scope review",
+      "Validate all frozen files against 827ba64 and verify checkpoint hashes"
+    ]
+  },
+  "failures": [],
+  "next_stage": "execute",
+  "ready_for_execution": true,
+  "status": "ready",
+  "warnings": []
+}

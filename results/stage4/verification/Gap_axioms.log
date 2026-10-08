@@ -1,0 +1,7 @@
+'Stage4.Gap.ordinary_lower_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.Gap.ordinary_strict_gap' depends on axioms: [propext, Quot.sound]
+'Stage4.Gap.mixed_gap' depends on axioms: [propext, Quot.sound]
+'Stage4.Gap.distinct_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.Gap.outer_pair_deletion_energy' depends on axioms: [propext, Quot.sound]
+'Stage4.Gap.unique_minimum_of_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.Gap.exact_gap_of_lower_bound' depends on axioms: [propext, Quot.sound]

@@ -1,0 +1,64 @@
+{
+  "objective": "Execute Stage 4 independent review and Lean verification of the three-helix construction, pausing at a safe checkpoint when weekly usage remaining reaches 70 percent.",
+  "semantic_intent": "execute",
+  "project": "RNA inverse folding",
+  "repository": "/Users/lukesmacminim41/RNA Inverse Folding",
+  "plan_confirmed": true,
+  "context_candidates": [
+    {
+      "source": "Current user Stage 4 authorization; frozen sources/STAGE1_SPEC.md; Stage 3 candidate and report at 827ba64; clean repository inspected 2026-10-08",
+      "authority": "canonical",
+      "available": true,
+      "verified": true,
+      "write_back_allowed": true
+    }
+  ],
+  "constraints": [
+    "Preserve frozen model, prior Python sources, Lean pilot, and Stage 2/3 evidence",
+    "Monitor shared weekly usage; initial remaining 80 percent; reserve closeout margin at 72 percent; stop substantive work at 70 percent",
+    "No remote push, external contact, cloud write, usage reset, background continuation, or novelty claim",
+    "No proof placeholders, extra project axioms, native computation shortcuts, or conditional results presented as unconditional"
+  ],
+  "non_goals": [
+    "Biological transfer",
+    "New experiment searches",
+    "Publication or external specialist review without authorization"
+  ],
+  "acceptance_criteria": [
+    "Independent review of candidate Lemmas 1-4 retained",
+    "Unbounded model and full frozen table faithfully represented",
+    "Unconditional unique minimum and exact gap theorem kernel checked against every admissible fold",
+    "Clean pinned build, full transitive axiom audit and independent fidelity review retained",
+    "Literature boundary reconciled without unsupported novelty claim",
+    "Frozen prior evidence preserved and safe usage checkpoint retained"
+  ],
+  "test_plan": [
+    "Compile each new Lean module with pinned 4.19.0",
+    "Clean build and transitive axiom report for every new theorem",
+    "Independent source fidelity and proof-scope review",
+    "Validate all frozen files against 827ba64 and verify checkpoint hashes"
+  ],
+  "affected_systems": [
+    "Local repository research files and documentation"
+  ],
+  "rollback_considerations": [
+    "Additive Stage 4 directory and docs; base commit 827ba64 preserved"
+  ],
+  "execution_authority": {
+    "task_authorized": true,
+    "action_gate": {
+      "authorized": true,
+      "action_class": "external_reversible",
+      "scope": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "source": "User: Please proceed with Stage 4. Pause at a safe checkpoint when weekly usage remaining reaches 70%."
+    }
+  },
+  "capability_report": {
+    "institutional_memory": {
+      "write_back_allowed": {
+        "value": true
+      }
+    },
+    "note": "Local repository edits authorized directly by user; cloud memory remains read-only with no RNA-named owner in verified selected checkpoint."
+  }
+}

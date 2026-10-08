@@ -1,0 +1,310 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-08T19:31:43.975314+00:00",
+  "general_theorem_verified": false,
+  "proof_scope": "See STAGE4_REPORT.md and explicit theorem hypotheses",
+  "sources": {
+    "lean/Stage4/Classification.lean": "6f107f00686bcc23ed099ca66f4092714e3b7218998d09e0354d113d80fa8b32",
+    "lean/Stage4/Energy.lean": "7b6132e4684b230eeabc1bbc8dca170a52105ad8fe85ae7510f307228df646a8",
+    "lean/Stage4/Gap.lean": "5b265a3c470f7e46a64f0ce8c6c95eb86d57ad6741b35b7356d28ea62017832b",
+    "lean/Stage4/Model.lean": "f72d0bdfc6d2da7c0ee381b2e87fad253eb9ddc88220f970be734fe3eec2e922"
+  },
+  "commands": [
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lean",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "lean_version.log",
+      "sha256": "adae83ba7663543abb21a1527013239eb469a7dbff15bea8c52d90901b42cc65"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "lake_version.log",
+      "sha256": "dc1f8f58960933047871f7df82c5de73ea0f705617e101b7dd9413a418a2195d"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "clean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "clean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "build"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "build.log",
+      "sha256": "ab03bff6f0e4ece13386fdca5062352506d158d321ea703610888faaabeb785d"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Classification.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Classification_axioms.log",
+      "sha256": "0b04733e619e0a966d44e9778503f5fb5c6e1b83cc360fa1853524515db9b39e"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Energy.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Energy_axioms.log",
+      "sha256": "90dd720ffe439d0418d3304839b41cf77bc016c5ed5b1d59ce6b0dbe7f6f68f4"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Gap.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Gap_axioms.log",
+      "sha256": "5d3e8854af94f8c1ac55264789301ea14851e8cfd7df329fde8fabff9acfee4c"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Model.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Model_axioms.log",
+      "sha256": "99d542040d1333e1a85bbde39f4a027d4bf7f2ad624f95d131773d57fd34741e"
+    }
+  ],
+  "theorem_count": 52,
+  "theorem_axioms": {
+    "Stage4.seq_A_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.seq_C_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.seq_G_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.seq_U_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.dinucleotide_complete": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.allowed_pair_class": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.stack_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_stack_position": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_excludes_left_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.no_pair_to_left_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_stack_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.sum_map_add": [
+      "propext"
+    ],
+    "Stage4.int_sum_append": [
+      "propext"
+    ],
+    "Stage4.sum_range_indicator": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.seq_final_U": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_outermost_contribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.stack_without_zero": [
+      "propext"
+    ],
+    "Stage4.deleteOutermost_contribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.ordinary_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.ordinary_strict_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.mixed_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.distinct_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.outer_pair_deletion_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.unique_minimum_of_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.exact_gap_of_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.wc_symmetric": [],
+    "Stage4.stackEnergy_rotation": [],
+    "Stage4.compatible_stack_negative": [],
+    "Stage4.incompatible_stack_zero": [],
+    "Stage4.target_iff": [
+      "propext"
+    ],
+    "Stage4.target_pair_allowed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_endpoints_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.target_noncrossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.empty_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.sum_map_zero": [
+      "propext"
+    ],
+    "Stage4.empty_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_no_stack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.span_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.admissible_of_subset": [],
+    "Stage4.target_stack_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.withoutPair_admissible": [
+      "propext"
+    ],
+    "Stage4.target_outermost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.pair_right_injective": [],
+    "Stage4.pair_left_injective": [],
+    "Stage4.stack_right_injective": [
+      "propext"
+    ],
+    "Stage4.stack_left_injective": [
+      "propext"
+    ]
+  },
+  "transitive_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-10-08T19:32:01.152132+00:00"
+}

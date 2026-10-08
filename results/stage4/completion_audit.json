@@ -1,0 +1,60 @@
+{
+  "completion": {
+    "acceptance_status": "not_passed",
+    "blockers": [],
+    "completion_state": "INCOMPLETE",
+    "failures": [
+      "acceptance_not_passed"
+    ],
+    "rollback_performed": false,
+    "user_action_required": false,
+    "user_actions": [],
+    "work_remaining": [
+      "Actual stack-count energy decomposition",
+      "Finite counting bounds and equality reconstruction",
+      "Actual target closed-form energy",
+      "Unconditional uniqueness/exact-gap theorem and independent final review",
+      "Complete primary-paper comparison with WABI 2026 PDF; Stage 4 retrieval incomplete at usage stop"
+    ],
+    "work_succeeded": [
+      "Faithful unbounded model and target admissibility",
+      "Complete stack classification and mixed-stack exclusion",
+      "Actual deletion witness energy exactly +93",
+      "Explicitly conditional gap arithmetic",
+      "Independent internal reviews and clean build"
+    ]
+  },
+  "execution_envelope": {
+    "architecture_version": "1.0.0",
+    "authority": "canonical",
+    "dependency_status": {
+      "runtime_root": "/Users/lukesmacminim41/Documents/Codex/Skill-Runtime",
+      "skill_runtime": "available"
+    },
+    "engine": "codex-task-orchestrator-engine",
+    "execution_surface": "codex-local",
+    "fallback_reason": null,
+    "fallback_used": false,
+    "observation_kind": "actual",
+    "orchestrator": {
+      "acceptance_status": "not_passed",
+      "completion_state": "INCOMPLETE",
+      "complexity": "material",
+      "plan_mode_used": true,
+      "repository": "/Users/lukesmacminim41/RNA Inverse Folding",
+      "resolved_project": "RNA inverse folding",
+      "task_mode": "execute",
+      "user_action_required": false
+    },
+    "platform": "macOS",
+    "runtime_version": "1.5.0",
+    "schema_version": "1.0.0",
+    "skill": "codex-task-orchestrator",
+    "skill_version": "1.0.0",
+    "source": "Current user Stage 4 authorization; frozen sources/STAGE1_SPEC.md; Stage 3 candidate and report at 827ba64; clean repository inspected 2026-10-08",
+    "validation_result": "INCOMPLETE",
+    "warnings": [],
+    "write_back_allowed": false,
+    "write_back_performed": false
+  }
+}

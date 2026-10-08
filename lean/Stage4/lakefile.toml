@@ -1,0 +1,15 @@
+name = "rna_stage4"
+version = "0.1.0"
+defaultTargets = ["Model", "Gap", "Classification", "Energy"]
+
+[[lean_lib]]
+name = "Model"
+
+[[lean_lib]]
+name = "Gap"
+
+[[lean_lib]]
+name = "Classification"
+
+[[lean_lib]]
+name = "Energy"

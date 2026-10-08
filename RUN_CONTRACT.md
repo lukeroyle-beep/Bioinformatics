@@ -111,3 +111,18 @@ by 72%, and start no further research at 70%. Stop sooner at the stage gate.
 No Stage 4 formalisation, remote push, external contact, cloud memory upload,
 usage reset or background continuation is included. The active model/reasoning
 selector is not exposed; the requested Astra Extra High setting is unverified.
+
+## Authorised Stage 4 verification, 8 October 2026
+
+Luke subsequently instructed: "Please proceed with Stage 4. Pause at a safe
+checkpoint when weekly usage remaining reaches 70%." This supersedes the
+Stage 4 stop for the present task. The scope is independent review and faithful
+Lean verification of the Stage 3 candidate under the frozen model, plus a
+bounded primary-literature comparison. The initial weekly reading is 80%
+remaining; reserve closeout margin at 72% and start no research at 70%.
+
+The explicit plan is research/STAGE4_PLAN.md and the execution contract is
+results/stage4/execution_contract.json. Preserve earlier sources/evidence;
+retain new proofs separately. No remote push, external contact, cloud memory
+write, reset or background continuation. Partial formalisation must list the
+unproved structural obligations and cannot be called the family theorem.
