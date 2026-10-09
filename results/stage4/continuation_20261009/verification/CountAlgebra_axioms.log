@@ -1,0 +1,4 @@
+'Stage4.double_sum_swap' depends on axioms: [propext]
+'Stage4.sum_map_mul' depends on axioms: [propext]
+'Stage4.natCast_sum_map' depends on axioms: [propext]
+'Stage4.sum_range_unique_support' depends on axioms: [propext, Quot.sound]

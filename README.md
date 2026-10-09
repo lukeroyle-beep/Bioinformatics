@@ -4,22 +4,22 @@ Research into whether every target in a restricted, infinite family of
 three-helix RNA structures can be made the unique minimum-energy fold under a
 fixed stacking-only model.
 
-**Stage 4 is paused at a partial verification checkpoint.** See the
-[Stage 4 report](research/STAGE4_REPORT.md). Lean now verifies the arbitrary-length
-model, target admissibility, complete stack classification, mixed-stack exclusion,
-and an admissible competitor exactly 0.93 kcal/mol above the target. The general
-lower bound and uniqueness theorem remain unproved. Independent internal reviews
-found no defect in the informal candidate or retained formal model; these are not
-external mathematical review. Novelty remains provisional.
+**Stage 4's unbounded theorem is now kernel checked.** For every target in the
+frozen three-helix family, the construction has a unique minimum-energy fold
+and an exact **0.93 kcal/mol** gap against every distinct admissible competitor.
+See the [verified Stage 4 report](research/STAGE4_VERIFIED_REPORT.md) and
+[final Lean statements](lean/Stage4/Final.lean).
 
-The [Stage 3 construction](research/STAGE3_CANDIDATE.md) has 269 passing finite
-target cases and an informal all-length argument. Neither those finite checks nor
-the current partial Lean results establish the full theorem.
+The result is specific to the frozen stacking-only model. Independent internal
+review supports model fidelity; external specialist review, scientific novelty
+and biological applicability remain unclaimed. The earlier
+[partial checkpoint](research/STAGE4_REPORT.md) and its evidence are preserved.
 
 Stage 2 is complete. The repository contains the
 Stage 1 problem specification, bounded Python experiments, a kernel-checked
 seven-position Lean pilot, and their verification evidence. The infinite-family
-question remains unverified under the project's proof standard.
+construction is now kernel checked under the frozen model; external research
+review remains separate.
 
 Start with the [research report](REPORT.md), [frozen problem specification](sources/STAGE1_SPEC.md)
 and [execution contract](RUN_CONTRACT.md).
@@ -158,7 +158,7 @@ See [Python reproduction evidence](results/python_reproduction.json) and
 | [REPORT.md](REPORT.md) | Detailed findings, provenance and limitations |
 | [research/](research/) | Stage 3 candidate and bounded evidence; Stage 4 plan, literature comparison and resume report |
 | [results/stage3/](results/stage3/) | Preserved Stage 3 finite evidence and checkpoint records |
-| [lean/Stage4/](lean/Stage4/) | Separate dependency-free partial formalisation, pinned to Lean 4.19.0 |
+| [lean/Stage4/](lean/Stage4/) | Dependency-free unbounded formalisation, pinned to Lean 4.19.0 |
 | [results/stage4/](results/stage4/) | Independent reviews, clean build, axiom audit and checkpoint records |
 
 Evidence records are dated snapshots. The original blocked Lean receipt and
@@ -180,12 +180,13 @@ The script verifies a fresh bundle restoration and writes an archive and checksu
 to ignored `checkpoints/`. To restore such an archive, verify its `MANIFEST.json`,
 then follow `RESTORE.txt` to clone `RNA_Stage_4.bundle` at the recorded branch.
 The older Stage 2/3 packagers are retained for those historical checkouts; use
-the Stage 4 packager for this partial verification checkpoint.
+the Stage 4 packager for the current verified checkpoint.
 
 The GitHub migration was expressly authorised after Stage 2 verification.
 The later Stage 3 work was authorised on 8 October with a stop at 70% account
 allowance remaining, or the stage gate if reached sooner. The later Stage 4
 instruction authorised verification with a pause at 70% weekly remaining.
+The 9 October continuation set a 50% weekly-remaining stop.
 This Stage 4 checkpoint is local; it has not been pushed to GitHub.
 No external reviewer was contacted
 or Google Drive memory uploaded. The requested Astra Extra High configuration

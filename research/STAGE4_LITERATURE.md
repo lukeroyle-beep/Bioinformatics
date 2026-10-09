@@ -56,3 +56,29 @@ optimality does not imply its weighted stacking guarantee. The WABI abstract
 likewise cannot establish transfer to these conditions. A complete WABI
 full-text model-and-theorem comparison is still needed before assessing
 overlap; even that bounded comparison would not establish originality.
+
+## 9 October continuation: full-text access recovered
+
+The cached publisher PDF was located and verified: 1,467,424 bytes, SHA-256
+`54a35a5bd2047adb109e722db9bb99eac66a2c91434213d170e5ab3e1d898ca1`,
+matching the Stage 3 provenance. Pages 3, 4, 8 and 16 were freshly extracted
+from these PDF bytes with pypdf and read. The publisher record was also reopened;
+a new online PDF request timed out. The earlier access failure remains historical.
+
+The bounded model/theorem comparison is now complete:
+
+| Dimension | WABI 2026 paper | Frozen project |
+| --- | --- | --- |
+| Pairing | Includes GU wobble (§2, p.3) | AU/UA/CG/GC only |
+| Admissibility | Every pair belongs to a stack (p.3) | Isolated pairs admitted |
+| Pair span | j > i+1 (p.3) | At least three enclosed positions |
+| Main objective | Maximise stack count (Problem 1, p.4) | Minimise the exact unequal stack-energy sum |
+| Construction guarantee | Helix-length condition depending logarithmically on maximum loop degree (Theorem 5, p.8) | Three specified helices, each length >=3 |
+| Weighted extension | Discusses transfer when non-wobble stacks dominate wobble stacks (p.16) | Specific frozen two-decimal WC table and exact 93-unit gap |
+
+The weighted discussion is relevant prior art and must not be described as
+absent. These assumption differences alone establish neither originality nor
+non-overlap. No verified reduction from the published theorem to this exact
+short-helix construction and full competitor domain has been supplied. Specialist
+comparison and broader novelty assessment remain separate from this bounded read.
+Source: [publisher PDF](https://drops.dagstuhl.de/storage/00lipics/lipics-vol390-wabi2026/LIPIcs.WABI.2026.12/LIPIcs.WABI.2026.12.pdf).

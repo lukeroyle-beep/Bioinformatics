@@ -1,0 +1,26 @@
+'Stage4.pair_right_injective' does not depend on any axioms
+'Stage4.pair_left_injective' does not depend on any axioms
+'Stage4.stack_right_injective' depends on axioms: [propext]
+'Stage4.stack_left_injective' depends on axioms: [propext]
+'Stage4.span_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.admissible_of_subset' does not depend on any axioms
+'Stage4.target_stack_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.withoutPair_admissible' depends on axioms: [propext]
+'Stage4.target_outermost' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.deleteOutermost_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.deleteOutermost_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.wc_symmetric' does not depend on any axioms
+'Stage4.stackEnergy_rotation' does not depend on any axioms
+'Stage4.compatible_stack_negative' does not depend on any axioms
+'Stage4.incompatible_stack_zero' does not depend on any axioms
+'Stage4.target_iff' depends on axioms: [propext]
+'Stage4.target_pair_allowed' depends on axioms: [propext, Quot.sound]
+'Stage4.target_endpoints_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.target_noncrossing' depends on axioms: [propext, Quot.sound]
+'Stage4.target_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.empty_admissible' depends on axioms: [propext, Quot.sound]
+'Stage4.sum_map_zero' depends on axioms: [propext]
+'Stage4.empty_energy' depends on axioms: [propext, Quot.sound]
+'Stage4.singleton_admissible' depends on axioms: [propext, Quot.sound]
+'Stage4.singleton_no_stack' depends on axioms: [propext, Quot.sound]
+'Stage4.singleton_energy' depends on axioms: [propext, Quot.sound]

@@ -1,6 +1,6 @@
 name = "rna_stage4"
 version = "0.1.0"
-defaultTargets = ["Model", "Gap", "Classification", "Energy"]
+defaultTargets = ["Model", "Gap", "Classification", "Energy", "TargetEnergy", "Reconstruction", "CountAlgebra", "Counts", "Bounds", "Final"]
 
 [[lean_lib]]
 name = "Model"
@@ -13,3 +13,21 @@ name = "Classification"
 
 [[lean_lib]]
 name = "Energy"
+
+[[lean_lib]]
+name = "TargetEnergy"
+
+[[lean_lib]]
+name = "Reconstruction"
+
+[[lean_lib]]
+name = "CountAlgebra"
+
+[[lean_lib]]
+name = "Counts"
+
+[[lean_lib]]
+name = "Bounds"
+
+[[lean_lib]]
+name = "Final"

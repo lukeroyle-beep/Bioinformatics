@@ -36,7 +36,7 @@ def main():
     lake = shutil.which('lake', path=env['PATH'])
     sources = sorted(PACKAGE.glob('*.lean'))
     receipt = dict(status='RUNNING', started_utc=datetime.now(timezone.utc).isoformat(),
-                   general_theorem_verified=False, proof_scope='See STAGE4_REPORT.md and explicit theorem hypotheses',
+                   general_theorem_verified=False, proof_scope='Exact frozen-model theorem only; see current Stage 4 report and explicit theorem hypotheses',
                    sources={str(p.relative_to(ROOT)): digest(p) for p in sources}, commands=[])
 
     def save():
@@ -88,7 +88,10 @@ def main():
             raise RuntimeError(f'Unexpected transitive axioms: {union}')
         if any(digest(ROOT / p) != h for p, h in receipt['sources'].items()):
             raise RuntimeError('Source changed during verification')
+        required_final = {'Stage4.unique_minimum', 'Stage4.exact_gap'}
         receipt.update(status='PASS', theorem_count=len(dependencies),
+                       general_theorem_verified=required_final.issubset(dependencies),
+                       final_theorems=sorted(required_final.intersection(dependencies)),
                        theorem_axioms=dependencies, transitive_axiom_union=union)
     except Exception as exc:
         receipt.update(status='FAIL', error=str(exc))

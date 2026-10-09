@@ -1,5 +1,8 @@
 # Stage 4 partial verification checkpoint — 8 October 2026
 
+Historical checkpoint. The [9 October verified report](STAGE4_VERIFIED_REPORT.md)
+supersedes the incomplete proof status below; all dated evidence is preserved.
+
 **Stage 4 is incomplete and paused at the requested weekly-usage boundary.**
 The retained formalisation has a clean Lean 4.19.0 build and 52 kernel-checked
 theorem declarations. It does not yet prove the unbounded unique-minimum result.

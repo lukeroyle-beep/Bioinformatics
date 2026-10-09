@@ -1,0 +1,4 @@
+'Stage4.reconstruction_of_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.gap_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.unique_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.exact_gap' depends on axioms: [propext, Classical.choice, Quot.sound]

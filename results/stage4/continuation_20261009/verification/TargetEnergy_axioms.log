@@ -1,0 +1,7 @@
+'Stage4.helixTerm_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.target_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.target_stack_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.target_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.sum_range_prefix' depends on axioms: [propext, Quot.sound]
+'Stage4.sum_range_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.helixTerm_row' depends on axioms: [propext, Classical.choice, Quot.sound]

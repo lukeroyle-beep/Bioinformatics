@@ -47,3 +47,13 @@ Changes are additive, with reviewable README/contract updates. The original
 base commit remains restorable. Verify all frozen paths byte-for-byte against
 827ba64, compile every new theorem, reject undeclared axioms/placeholders, and
 retain exact accepted source hashes. Do not rerun the old Python experiments.
+
+## 9 October authorised continuation
+
+Luke instructed continuation with a pause when weekly remaining reaches 50%.
+This replaces the prior 70% stop for this invocation. Starting allowance: 68%.
+Base clean checkpoint: 6c20125. Reserve stabilization margin at 52%; start no new
+research at 50%. Continue the same frozen model and proof obligations with
+TargetEnergy, Reconstruction, Counts and supporting modules; no experiment
+reruns, remote push, external contact or cloud write. Preserve the first build
+and checkpoint receipts; new evidence lives in results/stage4/continuation_20261009.

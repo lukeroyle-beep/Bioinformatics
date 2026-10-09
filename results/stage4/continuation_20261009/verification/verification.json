@@ -1,0 +1,597 @@
+{
+  "status": "PASS",
+  "started_utc": "2026-10-09T05:11:18.576558+00:00",
+  "general_theorem_verified": true,
+  "proof_scope": "Exact frozen-model theorem only; see current Stage 4 report and explicit theorem hypotheses",
+  "sources": {
+    "lean/Stage4/Bounds.lean": "58f80284b781dff94540d1def03a5d4869541bed0a59d1ff1f8156167ba1f9e7",
+    "lean/Stage4/Classification.lean": "6f107f00686bcc23ed099ca66f4092714e3b7218998d09e0354d113d80fa8b32",
+    "lean/Stage4/CountAlgebra.lean": "539e5aaec498d7d2ebd41e47c64a59ed7d55ac37dbe73ec7d9959de9ecc1666c",
+    "lean/Stage4/Counts.lean": "f63e1c08a351917b306df9ad3e59e2f1bd093d0694046c86212d38e39a534da3",
+    "lean/Stage4/Energy.lean": "7b6132e4684b230eeabc1bbc8dca170a52105ad8fe85ae7510f307228df646a8",
+    "lean/Stage4/Final.lean": "3faba712c05e22dbf6a0bdaa0fd07df704724ba7b33b2583cb522b86871e5bb1",
+    "lean/Stage4/Gap.lean": "5b265a3c470f7e46a64f0ce8c6c95eb86d57ad6741b35b7356d28ea62017832b",
+    "lean/Stage4/Model.lean": "f72d0bdfc6d2da7c0ee381b2e87fad253eb9ddc88220f970be734fe3eec2e922",
+    "lean/Stage4/Reconstruction.lean": "93dbe4efc047dd6cd864dd29848ebbbf0b37e28517eab7d9ccb6053c4fbeeae7",
+    "lean/Stage4/TargetEnergy.lean": "78d3fb34bc45fe3002e841af194ccfeab871d2abe72df6f58a9a0d1658c08077"
+  },
+  "commands": [
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lean",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "lean_version.log",
+      "sha256": "adae83ba7663543abb21a1527013239eb469a7dbff15bea8c52d90901b42cc65"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "--version"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "lake_version.log",
+      "sha256": "dc1f8f58960933047871f7df82c5de73ea0f705617e101b7dd9413a418a2195d"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "clean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "clean.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "build"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "build.log",
+      "sha256": "df7f53ce0438c495f855ea43cd07d87b3a617a00c471c96777c11c41f8a6efa7"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Bounds.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Bounds_axioms.log",
+      "sha256": "64745dcf264162970d687f1b21aa4112240b4ef26aa3afbf5a89ec003976d140"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Classification.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Classification_axioms.log",
+      "sha256": "0b04733e619e0a966d44e9778503f5fb5c6e1b83cc360fa1853524515db9b39e"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "CountAlgebra.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "CountAlgebra_axioms.log",
+      "sha256": "922b178a317f830869d15fb87cc90bf00804b225eb1cf33993d808a1bfb61658"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Counts.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Counts_axioms.log",
+      "sha256": "c1727b11ec915b56180553e12c5dcdf5a4d52b925b2021992aec7b7b203798af"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Energy.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Energy_axioms.log",
+      "sha256": "90dd720ffe439d0418d3304839b41cf77bc016c5ed5b1d59ce6b0dbe7f6f68f4"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Final.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Final_axioms.log",
+      "sha256": "b43ba76e3e07e1d88a99e2b37cb556844ca40bd77b99e730314f6ec0b1d703cf"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Gap.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Gap_axioms.log",
+      "sha256": "5d3e8854af94f8c1ac55264789301ea14851e8cfd7df329fde8fabff9acfee4c"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Model.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Model_axioms.log",
+      "sha256": "99d542040d1333e1a85bbde39f4a027d4bf7f2ad624f95d131773d57fd34741e"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "Reconstruction.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "Reconstruction_axioms.log",
+      "sha256": "2b5daf4d46837ab450440dad60b27f475ef9d177783b60a827adfcf6a84e6d06"
+    },
+    {
+      "command": [
+        "/Users/lukesmacminim41/RNA Inverse Folding/.tools/lean-4.19.0-darwin_aarch64/bin/lake",
+        "env",
+        "lean",
+        "TargetEnergy.lean"
+      ],
+      "cwd": "/Users/lukesmacminim41/RNA Inverse Folding/lean/Stage4",
+      "exit_code": 0,
+      "log": "TargetEnergy_axioms.log",
+      "sha256": "f6981aefc4ade5882ae4426adce56a22a2c409e88c056997c2b2629b57224b48"
+    }
+  ],
+  "theorem_count": 100,
+  "final_theorems": [
+    "Stage4.exact_gap",
+    "Stage4.unique_minimum"
+  ],
+  "theorem_axioms": {
+    "Stage4.saturated_au": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countGC_saturated_components": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.saturated_gc_left": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.saturated_gc_right": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_countLeftGC_zero": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_count_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.seq_A_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.seq_C_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.seq_G_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.seq_U_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.dinucleotide_complete": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.allowed_pair_class": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.stack_classification": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_stack_position": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_excludes_left_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.no_pair_to_left_C": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.mixed_stack_unique": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.double_sum_swap": [
+      "propext"
+    ],
+    "Stage4.sum_map_mul": [
+      "propext"
+    ],
+    "Stage4.natCast_sum_map": [
+      "propext"
+    ],
+    "Stage4.sum_range_unique_support": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.rightSupport_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.leftSupport_iff": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.nat_sum_map_congr": [
+      "propext"
+    ],
+    "Stage4.int_sum_map_congr": [
+      "propext"
+    ],
+    "Stage4.nat_sum_map_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.nat_sum_map_eq_of_le": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.nat_sum_append": [
+      "propext"
+    ],
+    "Stage4.nat_sum_range_interval": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.edgeCount_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.edgeCount_saturated": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countAU_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countLeftGC_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countRightGC_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countGC_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.countMixed_binary": [
+      "propext"
+    ],
+    "Stage4.contribution_four_terms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.edgeCount_weight": [
+      "propext"
+    ],
+    "Stage4.rightTerm_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.leftTerm_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.mixedTerm_sum": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.energy_eq_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.sum_map_add": [
+      "propext"
+    ],
+    "Stage4.int_sum_append": [
+      "propext"
+    ],
+    "Stage4.sum_range_indicator": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.seq_final_U": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_outermost_contribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.stack_without_zero": [
+      "propext"
+    ],
+    "Stage4.deleteOutermost_contribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.reconstruction_of_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.gap_lower_bound": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.unique_minimum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.exact_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.ordinary_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.ordinary_strict_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.mixed_gap": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.distinct_gap": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.outer_pair_deletion_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.unique_minimum_of_counts": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.Gap.exact_gap_of_lower_bound": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.wc_symmetric": [],
+    "Stage4.stackEnergy_rotation": [],
+    "Stage4.compatible_stack_negative": [],
+    "Stage4.incompatible_stack_zero": [],
+    "Stage4.target_iff": [
+      "propext"
+    ],
+    "Stage4.target_pair_allowed": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_endpoints_disjoint": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.target_noncrossing": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.target_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.empty_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.sum_map_zero": [
+      "propext"
+    ],
+    "Stage4.empty_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_admissible": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_no_stack": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.singleton_energy": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.span_equivalence": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.admissible_of_subset": [],
+    "Stage4.target_stack_iff": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.withoutPair_admissible": [
+      "propext"
+    ],
+    "Stage4.target_outermost": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_admissible": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.deleteOutermost_distinct": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.pair_right_injective": [],
+    "Stage4.pair_left_injective": [],
+    "Stage4.stack_right_injective": [
+      "propext"
+    ],
+    "Stage4.stack_left_injective": [
+      "propext"
+    ],
+    "Stage4.left_helix_from_edges": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.right_helix_from_edges": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.gc_helices_from_saturation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.au_left_in_first_block": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.au_helix_from_saturation": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.reconstruction_from_saturated_edges": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.sum_range_prefix": [
+      "propext",
+      "Quot.sound"
+    ],
+    "Stage4.sum_range_interval": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.helixTerm_row": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.target_stack_weight": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.target_contribution": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.helixTerm_sum": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "Stage4.target_energy": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ]
+  },
+  "transitive_axiom_union": [
+    "Classical.choice",
+    "Quot.sound",
+    "propext"
+  ],
+  "finished_utc": "2026-10-09T05:11:45.653988+00:00"
+}

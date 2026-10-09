@@ -126,3 +126,15 @@ results/stage4/execution_contract.json. Preserve earlier sources/evidence;
 retain new proofs separately. No remote push, external contact, cloud memory
 write, reset or background continuation. Partial formalisation must list the
 unproved structural obligations and cannot be called the family theorem.
+
+## Authorised Stage 4 continuation, 9 October 2026
+
+Luke instructed: "Please continue with Stage 4. Pause at a safe checkpoint when
+weekly usage remaining reaches 50%." Start from clean local checkpoint 6c20125;
+initial remaining allowance 68%. The threshold supersedes the earlier 70% pause
+for this invocation. Complete the missing finite-count/energy bridge, counting
+bounds, equality reconstruction and theorem application as allowance permits.
+Reserve checkpoint margin at 52%; begin no new research at 50%. Existing model,
+experiments, old proof modules and evidence remain preserved; new proof/evidence
+files retain exact scope and all axioms. No remote publication, external contact,
+cloud memory write, reset or background continuation is included.
