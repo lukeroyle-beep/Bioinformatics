@@ -1,0 +1,6 @@
+'Stage4.au_left_in_first_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.au_helix_from_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.reconstruction_from_saturated_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.left_helix_from_edges' depends on axioms: [propext, Quot.sound]
+'Stage4.right_helix_from_edges' depends on axioms: [propext, Quot.sound]
+'Stage4.gc_helices_from_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]

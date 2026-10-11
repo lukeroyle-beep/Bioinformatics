@@ -138,3 +138,18 @@ Reserve checkpoint margin at 52%; begin no new research at 50%. Existing model,
 experiments, old proof modules and evidence remain preserved; new proof/evidence
 files retain exact scope and all axioms. No remote publication, external contact,
 cloud memory write, reset or background continuation is included.
+
+## Authorised GitHub proof update, 11 October 2026
+
+Luke instructed: "Please update the GitHub repo with the lean proof." This
+authorises publishing the completed Stage 4 checkpoint `c639bf8` and its
+preserved Stage 3/4 history to `lukeroyle-beep/Bioinformatics`. It supersedes
+the earlier local-only restriction for this repository update. Use a normal
+fast-forward push to the existing `main`, preserve the proof sources, frozen
+model and historical evidence, and verify the remote commit and file bytes.
+
+Run the existing pinned Stage 4 clean build and transitive axiom audit, retain
+the fresh pre-publication evidence separately, and update the README's scope,
+reproduction instructions and publication boundary. No new research, historical
+Python experiment reruns, external reviewer contact, cloud memory write, usage
+reset or background continuation is included.

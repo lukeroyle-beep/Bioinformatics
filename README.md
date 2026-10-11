@@ -6,7 +6,7 @@ fixed stacking-only model.
 
 **Stage 4's unbounded theorem is now kernel checked.** For every target in the
 frozen three-helix family, the construction has a unique minimum-energy fold
-and an exact **0.93 kcal/mol** gap against every distinct admissible competitor.
+and an exact **0.93 kcal/mol** gap to the best distinct admissible competitor.
 See the [verified Stage 4 report](research/STAGE4_VERIFIED_REPORT.md) and
 [final Lean statements](lean/Stage4/Final.lean).
 
@@ -33,6 +33,7 @@ and [execution contract](RUN_CONTRACT.md).
 | Fixed candidate screen | 256 sequences for the single 24-position target `((((((...)))(((...))))))` | 225 unique target minima, two ties, 29 beaten targets |
 | Independent enumeration for `AAAAAAAAAUUUCCCAAAGGGUUU` | All 42,478 compatible folds | Target -10.24 kcal/mol; best alternative -9.31; gap 0.93 |
 | Lean 4.19.0 pilot for `GGAAACC` | All six admissible folds of this seven-position sequence, with a proved fold-to-mask completeness bridge | Nested target uniquely minimal at -3.26 kcal/mol; 20 kernel-checked theorem declarations |
+| Lean 4.19.0 Stage 4 construction | Every `a,b,c,u,v >= 3` and every admissible fold under the frozen model | Unique target minimum and exact 0.93 kcal/mol gap; 100 kernel-checked theorem declarations |
 
 The Python validation exhausts all sequences through length eight and samples
 128 sequences at each length nine through twelve. It does not exhaust all
@@ -42,7 +43,7 @@ success probability. Three representative sequences received independent full
 fold enumeration under the unchanged 200,000-fold cap; see the report for
 coverage and skipped representatives.
 
-The Lean proof is about `GGAAACC` only. It does not formalize the Python folding
+The Stage 2 Lean pilot is about `GGAAACC` only. It does not formalize the Python folding
 algorithm, the 24-position certificate or the full stacking table. Its complete
 transitive axiom set is **`propext` and `Quot.sound`**. There are no `sorry`,
 `admit`, additional unproved project axioms or native computation proof shortcuts.
@@ -96,11 +97,27 @@ Lake version 5.0.0-6caaee8 (Lean version 4.19.0)
 With the pinned executables on PATH, run from the repository root:
 
 ```sh
+python3 scripts/verify_stage4.py --output-dir /tmp/rna-stage4-lean-recheck
+```
+
+This clean-builds all ten Stage 4 modules and audits all 100 theorem declarations,
+including `Stage4.unique_minimum`, `Stage4.gap_lower_bound` and `Stage4.exact_gap`.
+Their full transitive axiom union is **`propext`, `Quot.sound` and
+`Classical.choice`**. The verifier rejects proof placeholders, added unproved
+project axioms and native computation proof shortcuts. See the
+[verified report](research/STAGE4_VERIFIED_REPORT.md) and
+[11 October pre-publication recheck](results/stage4/github_publication_20261011/verification/verification.json).
+Use a fresh output directory for each run.
+
+To reproduce the separate Stage 2 pilot:
+
+```sh
 python3 scripts/verify_lean.py --output-dir /tmp/rna-stage2-lean-recheck
 ```
 
-For a standalone distribution, also pass `--bin-dir /path/to/lean/bin`.
-The script checks the actual version, runs `lake clean` and `lake build`, then
+For a standalone distribution, either command also accepts
+`--bin-dir /path/to/lean/bin`. Both check the actual version and run `lake clean`
+and `lake build`. The Stage 2 script then
 explicitly elaborates `Pilot.lean` to capture every theorem's transitive axioms.
 It retains commands, exit codes, output and the source hash. A separate output
 directory preserves the committed build evidence. The equivalent direct commands
@@ -182,12 +199,14 @@ then follow `RESTORE.txt` to clone `RNA_Stage_4.bundle` at the recorded branch.
 The older Stage 2/3 packagers are retained for those historical checkouts; use
 the Stage 4 packager for the current verified checkpoint.
 
-The GitHub migration was expressly authorised after Stage 2 verification.
-The later Stage 3 work was authorised on 8 October with a stop at 70% account
-allowance remaining, or the stage gate if reached sooner. The later Stage 4
-instruction authorised verification with a pause at 70% weekly remaining.
-The 9 October continuation set a 50% weekly-remaining stop.
-This Stage 4 checkpoint is local; it has not been pushed to GitHub.
-No external reviewer was contacted
-or Google Drive memory uploaded. The requested Astra Extra High configuration
-has not been verified or claimed. The frozen Stage 2 evidence is unchanged.
+The original GitHub migration was authorised after Stage 2 verification.
+Stage 3 and Stage 4 were subsequently completed as local checkpoints under
+their dated execution contracts. On 11 October 2026, Luke authorised updating
+the same GitHub repository with the completed Lean proof. This update includes
+the Stage 3 evidence, the partial Stage 4 checkpoint, and the verified Stage 4
+proof at `c639bf8`, preserving their history and frozen Stage 2 evidence.
+
+The current boundary is the internally verified frozen-model theorem. External
+specialist review, scientific novelty and biological applicability remain
+unclaimed. No external reviewer was contacted or Google Drive memory uploaded.
+The requested Astra Extra High configuration has not been verified or claimed.

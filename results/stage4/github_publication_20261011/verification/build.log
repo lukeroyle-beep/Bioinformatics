@@ -1,0 +1,115 @@
+ℹ [2/21] Built Gap
+info: ././././Gap.lean:92:0: 'Stage4.Gap.ordinary_lower_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Gap.lean:93:0: 'Stage4.Gap.ordinary_strict_gap' depends on axioms: [propext, Quot.sound]
+info: ././././Gap.lean:94:0: 'Stage4.Gap.mixed_gap' depends on axioms: [propext, Quot.sound]
+info: ././././Gap.lean:95:0: 'Stage4.Gap.distinct_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Gap.lean:96:0: 'Stage4.Gap.outer_pair_deletion_energy' depends on axioms: [propext, Quot.sound]
+info: ././././Gap.lean:97:0: 'Stage4.Gap.unique_minimum_of_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Gap.lean:98:0: 'Stage4.Gap.exact_gap_of_lower_bound' depends on axioms: [propext, Quot.sound]
+ℹ [4/21] Built Model
+info: ././././Model.lean:351:0: 'Stage4.pair_right_injective' does not depend on any axioms
+info: ././././Model.lean:352:0: 'Stage4.pair_left_injective' does not depend on any axioms
+info: ././././Model.lean:353:0: 'Stage4.stack_right_injective' depends on axioms: [propext]
+info: ././././Model.lean:354:0: 'Stage4.stack_left_injective' depends on axioms: [propext]
+info: ././././Model.lean:356:0: 'Stage4.span_equivalence' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:357:0: 'Stage4.admissible_of_subset' does not depend on any axioms
+info: ././././Model.lean:358:0: 'Stage4.target_stack_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:359:0: 'Stage4.withoutPair_admissible' depends on axioms: [propext]
+info: ././././Model.lean:360:0: 'Stage4.target_outermost' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:361:0: 'Stage4.deleteOutermost_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:362:0: 'Stage4.deleteOutermost_distinct' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:364:0: 'Stage4.wc_symmetric' does not depend on any axioms
+info: ././././Model.lean:365:0: 'Stage4.stackEnergy_rotation' does not depend on any axioms
+info: ././././Model.lean:366:0: 'Stage4.compatible_stack_negative' does not depend on any axioms
+info: ././././Model.lean:367:0: 'Stage4.incompatible_stack_zero' does not depend on any axioms
+info: ././././Model.lean:368:0: 'Stage4.target_iff' depends on axioms: [propext]
+info: ././././Model.lean:369:0: 'Stage4.target_pair_allowed' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:370:0: 'Stage4.target_endpoints_disjoint' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:371:0: 'Stage4.target_noncrossing' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:372:0: 'Stage4.target_admissible' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Model.lean:373:0: 'Stage4.empty_admissible' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:374:0: 'Stage4.sum_map_zero' depends on axioms: [propext]
+info: ././././Model.lean:375:0: 'Stage4.empty_energy' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:376:0: 'Stage4.singleton_admissible' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:377:0: 'Stage4.singleton_no_stack' depends on axioms: [propext, Quot.sound]
+info: ././././Model.lean:378:0: 'Stage4.singleton_energy' depends on axioms: [propext, Quot.sound]
+ℹ [6/21] Built Energy
+info: ././././Energy.lean:95:0: 'Stage4.deleteOutermost_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Energy.lean:97:0: 'Stage4.seq_final_U' depends on axioms: [propext, Quot.sound]
+info: ././././Energy.lean:98:0: 'Stage4.target_outermost_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Energy.lean:99:0: 'Stage4.stack_without_zero' depends on axioms: [propext]
+info: ././././Energy.lean:100:0: 'Stage4.deleteOutermost_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Energy.lean:102:0: 'Stage4.int_sum_append' depends on axioms: [propext]
+info: ././././Energy.lean:103:0: 'Stage4.sum_map_add' depends on axioms: [propext]
+info: ././././Energy.lean:104:0: 'Stage4.sum_range_indicator' depends on axioms: [propext, Quot.sound]
+ℹ [8/21] Built CountAlgebra
+info: ././././CountAlgebra.lean:63:0: 'Stage4.double_sum_swap' depends on axioms: [propext]
+info: ././././CountAlgebra.lean:64:0: 'Stage4.sum_map_mul' depends on axioms: [propext]
+info: ././././CountAlgebra.lean:65:0: 'Stage4.natCast_sum_map' depends on axioms: [propext]
+info: ././././CountAlgebra.lean:66:0: 'Stage4.sum_range_unique_support' depends on axioms: [propext, Quot.sound]
+ℹ [10/21] Built Classification
+info: ././././Classification.lean:164:0: 'Stage4.mixed_stack_position' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:165:0: 'Stage4.mixed_excludes_left_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:166:0: 'Stage4.no_pair_to_left_C' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:167:0: 'Stage4.mixed_stack_unique' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:168:0: 'Stage4.seq_A_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:169:0: 'Stage4.seq_C_iff' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:170:0: 'Stage4.seq_G_iff' depends on axioms: [propext, Quot.sound]
+info: ././././Classification.lean:171:0: 'Stage4.seq_U_iff' depends on axioms: [propext, Quot.sound]
+info: ././././Classification.lean:172:0: 'Stage4.dinucleotide_complete' depends on axioms: [propext, Quot.sound]
+info: ././././Classification.lean:173:0: 'Stage4.allowed_pair_class' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Classification.lean:174:0: 'Stage4.stack_classification' depends on axioms: [propext, Classical.choice, Quot.sound]
+⚠ [12/21] Built Counts
+warning: ././././Counts.lean:156:15: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+warning: ././././Counts.lean:159:14: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+info: ././././Counts.lean:305:0: 'Stage4.rightSupport_iff' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:306:0: 'Stage4.leftSupport_iff' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:307:0: 'Stage4.nat_sum_map_congr' depends on axioms: [propext]
+info: ././././Counts.lean:308:0: 'Stage4.int_sum_map_congr' depends on axioms: [propext]
+info: ././././Counts.lean:309:0: 'Stage4.nat_sum_map_le' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:310:0: 'Stage4.nat_sum_map_eq_of_le' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:311:0: 'Stage4.nat_sum_append' depends on axioms: [propext]
+info: ././././Counts.lean:312:0: 'Stage4.nat_sum_range_interval' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:313:0: 'Stage4.edgeCount_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:314:0: 'Stage4.edgeCount_saturated' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:315:0: 'Stage4.countAU_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:316:0: 'Stage4.countLeftGC_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:317:0: 'Stage4.countRightGC_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:318:0: 'Stage4.countGC_bound' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:319:0: 'Stage4.countMixed_binary' depends on axioms: [propext]
+info: ././././Counts.lean:320:0: 'Stage4.contribution_four_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Counts.lean:321:0: 'Stage4.edgeCount_weight' depends on axioms: [propext]
+info: ././././Counts.lean:322:0: 'Stage4.rightTerm_sum' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:323:0: 'Stage4.leftTerm_sum' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:324:0: 'Stage4.mixedTerm_sum' depends on axioms: [propext, Quot.sound]
+info: ././././Counts.lean:325:0: 'Stage4.energy_eq_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [14/21] Built TargetEnergy
+info: ././././TargetEnergy.lean:174:0: 'Stage4.helixTerm_sum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././TargetEnergy.lean:175:0: 'Stage4.target_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././TargetEnergy.lean:177:0: 'Stage4.target_stack_weight' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././TargetEnergy.lean:178:0: 'Stage4.target_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././TargetEnergy.lean:180:0: 'Stage4.sum_range_prefix' depends on axioms: [propext, Quot.sound]
+info: ././././TargetEnergy.lean:181:0: 'Stage4.sum_range_interval' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././TargetEnergy.lean:182:0: 'Stage4.helixTerm_row' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [16/21] Built Bounds
+info: ././././Bounds.lean:116:0: 'Stage4.saturated_au' depends on axioms: [propext, Quot.sound]
+info: ././././Bounds.lean:117:0: 'Stage4.countGC_saturated_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Bounds.lean:118:0: 'Stage4.saturated_gc_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Bounds.lean:119:0: 'Stage4.saturated_gc_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Bounds.lean:120:0: 'Stage4.mixed_countLeftGC_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Bounds.lean:121:0: 'Stage4.mixed_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [18/21] Built Reconstruction
+info: ././././Reconstruction.lean:241:0: 'Stage4.au_left_in_first_block' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Reconstruction.lean:242:0: 'Stage4.au_helix_from_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Reconstruction.lean:243:0: 'Stage4.reconstruction_from_saturated_edges' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Reconstruction.lean:244:0: 'Stage4.left_helix_from_edges' depends on axioms: [propext, Quot.sound]
+info: ././././Reconstruction.lean:245:0: 'Stage4.right_helix_from_edges' depends on axioms: [propext, Quot.sound]
+info: ././././Reconstruction.lean:246:0: 'Stage4.gc_helices_from_saturation' depends on axioms: [propext, Classical.choice, Quot.sound]
+ℹ [20/21] Built Final
+info: ././././Final.lean:40:0: 'Stage4.reconstruction_of_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Final.lean:41:0: 'Stage4.gap_lower_bound' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Final.lean:42:0: 'Stage4.unique_minimum' depends on axioms: [propext, Classical.choice, Quot.sound]
+info: ././././Final.lean:43:0: 'Stage4.exact_gap' depends on axioms: [propext, Classical.choice, Quot.sound]
+Build completed successfully.

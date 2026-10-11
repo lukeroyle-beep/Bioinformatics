@@ -1,0 +1,8 @@
+'Stage4.deleteOutermost_energy' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.seq_final_U' depends on axioms: [propext, Quot.sound]
+'Stage4.target_outermost_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.stack_without_zero' depends on axioms: [propext]
+'Stage4.deleteOutermost_contribution' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.int_sum_append' depends on axioms: [propext]
+'Stage4.sum_map_add' depends on axioms: [propext]
+'Stage4.sum_range_indicator' depends on axioms: [propext, Quot.sound]

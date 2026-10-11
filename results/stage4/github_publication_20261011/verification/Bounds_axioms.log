@@ -1,0 +1,6 @@
+'Stage4.saturated_au' depends on axioms: [propext, Quot.sound]
+'Stage4.countGC_saturated_components' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.saturated_gc_left' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.saturated_gc_right' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.mixed_countLeftGC_zero' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.mixed_count_bound' depends on axioms: [propext, Classical.choice, Quot.sound]

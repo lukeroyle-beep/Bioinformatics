@@ -1,0 +1,25 @@
+Counts.lean:156:15: warning: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+Counts.lean:159:14: warning: unused variable `p`
+note: this linter can be disabled with `set_option linter.unusedVariables false`
+'Stage4.rightSupport_iff' depends on axioms: [propext, Quot.sound]
+'Stage4.leftSupport_iff' depends on axioms: [propext, Quot.sound]
+'Stage4.nat_sum_map_congr' depends on axioms: [propext]
+'Stage4.int_sum_map_congr' depends on axioms: [propext]
+'Stage4.nat_sum_map_le' depends on axioms: [propext, Quot.sound]
+'Stage4.nat_sum_map_eq_of_le' depends on axioms: [propext, Quot.sound]
+'Stage4.nat_sum_append' depends on axioms: [propext]
+'Stage4.nat_sum_range_interval' depends on axioms: [propext, Quot.sound]
+'Stage4.edgeCount_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.edgeCount_saturated' depends on axioms: [propext, Quot.sound]
+'Stage4.countAU_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.countLeftGC_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.countRightGC_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.countGC_bound' depends on axioms: [propext, Quot.sound]
+'Stage4.countMixed_binary' depends on axioms: [propext]
+'Stage4.contribution_four_terms' depends on axioms: [propext, Classical.choice, Quot.sound]
+'Stage4.edgeCount_weight' depends on axioms: [propext]
+'Stage4.rightTerm_sum' depends on axioms: [propext, Quot.sound]
+'Stage4.leftTerm_sum' depends on axioms: [propext, Quot.sound]
+'Stage4.mixedTerm_sum' depends on axioms: [propext, Quot.sound]
+'Stage4.energy_eq_counts' depends on axioms: [propext, Classical.choice, Quot.sound]
